@@ -1,0 +1,6 @@
+.o-wrap {
+  --grid-gutter: 1.5rem;
+  margin-inline: auto;
+  max-width: calc(48rem + var(--grid-gutter));
+  padding-inline: var(--grid-gutter);
+}
