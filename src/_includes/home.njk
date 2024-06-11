@@ -1,0 +1,9 @@
+{% extends "page.njk" %}
+
+{% block content %}
+{{ content | safe }}
+{% endblock %}
+
+{% block afterContent %}
+  {% include "components/tickets/tickets.njk" %}
+{% endblock %}
