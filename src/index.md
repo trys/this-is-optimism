@@ -4,7 +4,7 @@ subtitle: Berst
 layout: home
 ---
 
-A tiny, one-day conference in the Sussex countryside with nice people, good food and thought-provoking talks.
+## A tiny, one-day conference in the Sussex countryside with nice people, good food and thought-provoking talks.
 
 This year we’re exploring Kevin Kelly’s notion: Over the long term, the future is decided by optimists.
 
