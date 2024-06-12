@@ -1,5 +1,16 @@
+@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
+
 .o-wrap {
+  $clamp: utopia.calculateClamp((
+    "minWidth": $maxWidth,
+    "maxWidth": $maxWidth + $maxGutter * 2,
+    "minSize": 0,
+    "maxSize": 50,
+    "usePx": true,
+  ));
+
   margin-inline: auto;
-  max-width: calc(var(--site-width) + var(--grid-gutter));
-  // padding-inline-start: var(--grid-gutter);
+  max-width: calc(var(--site-width) + var(--grid-gutter) + #{$clamp});
+  padding-inline-start: var(--grid-gutter);
+  padding-inline-end: #{$clamp};
 }
