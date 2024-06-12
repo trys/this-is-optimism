@@ -10,7 +10,7 @@
   ));
 
   margin-inline: auto;
-  max-width: calc(var(--site-width) + var(--grid-gutter) + #{$clamp});
-  padding-inline-start: var(--grid-gutter);
+  max-width: calc(var(--site-width) + var(--gutter-out) + #{$clamp});
+  padding-inline-start: var(--gutter-out);
   padding-inline-end: #{$clamp};
 }
