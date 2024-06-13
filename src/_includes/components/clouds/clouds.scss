@@ -22,6 +22,7 @@
     "minWidth": 320,
     "maxWidth": 1440,
     "usePx": true,
+    "relativeTo": "viewport-width",
   );
 
   @function cc($min, $max) {

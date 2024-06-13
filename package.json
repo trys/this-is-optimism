@@ -6,9 +6,11 @@
     "src/assets/scss/main.scss"
   ],
   "scripts": {
-    "build": "npx @11ty/eleventy",
+    "prod:parcel": "parcel build --no-cache",
+    "prod:eleventy": "npx @11ty/eleventy",
     "bundle:parcel": "parcel watch --no-cache",
     "bundle:eleventy": "npx @11ty/eleventy --serve --quiet",
+    "build": "npm-run-all --parallel prod:*",
     "dev": "npm-run-all --parallel bundle:*"
   },
   "keywords": [],

@@ -13,5 +13,11 @@
     "usePx": true,
     "minSize": 270,
     "maxSize": 469,
+    "relativeTo": "viewport-width",
   ))};
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
 }

@@ -17,7 +17,8 @@ $maxGutter: 50;
       (30, 40),
       (100, 120)
     ),
-    "usePx": true
+    "usePx": true,
+    "relativeTo": "viewport-width",
   ));
 
   @include utopia.generateClamps((
@@ -26,7 +27,8 @@ $maxGutter: 50;
     "pairs": (
       (28, 32),
     ),
-    "prefix": "type-"
+    "prefix": "type-",
+    "relativeTo": "viewport-width",
   ));
 
   --site-width: 48rem;

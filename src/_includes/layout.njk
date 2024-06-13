@@ -4,12 +4,37 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title | safe }} | {{ subtitle | safe }}</title>
+    <title>{{ title | safe }} | {{ event.date.name }}</title>
+    <meta name="description" content="{{ event.location.name }}" />
+		<meta property="og:url" content="https://optimism.is" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="{{ title | safe }} | {{ event.date.name }}" />
+		<meta property="og:description" content="{{ event.location.name }}" />
+		<meta property="og:image" content="https://this-is-optimism.netlify.app/static/img/og.jpg" />
+		<meta property="og:image:alt" content="This is Optimism" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="{{ title | safe }} | {{ event.date.name }}" />
+		<meta name="twitter:description" content="{{ event.location.name }}" />
+		<meta name="twitter:image" content="https://this-is-optimism.netlify.app/static/img/og.jpg" />
+    <meta name="twitter:label1" value="When" />
+		<meta name="twitter:data1" value="{{ event.date.name }}" />
+		<meta name="twitter:label2" value="Where" />
+		<meta name="twitter:data2" value="{{ event.location.name }}" />
     <link rel="stylesheet" href="/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
-    <meta name="theme-color" content="#4D8AD9">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png">
+    <link rel="manifest" href="/static/icons/site.webmanifest">
+    <link rel="mask-icon" href="/static/icons/safari-pinned-tab.svg" color="#ff73bb">
+    <link rel="shortcut icon" href="/static/icons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="This is Optimism">
+    <meta name="application-name" content="This is Optimism">
+    <meta name="msapplication-TileColor" content="#4d8ad9">
+    <meta name="msapplication-config" content="/static/icons/browserconfig.xml">
+    <meta name="theme-color" content="#4d8ad9">
     {% block head %}{% endblock %}
   </head>
   <body>
