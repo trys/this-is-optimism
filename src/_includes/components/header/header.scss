@@ -89,7 +89,7 @@
 
     $settings: (
       "minWidth": 320,
-      "maxWidth": 768,
+      "maxWidth": 1000,
       "usePx": true,
       "relativeTo": "viewport-width",
     );
@@ -104,14 +104,14 @@
     & > :first-child {
       --hand-transform-origin: 0 0;
       --hand-aspect-ratio: 1245 / 519;
-      --hand-height: #{cc(260, 519)};
+      --hand-height: #{cc(260, 680)};
 
       --hand-rotate-enter: -48deg;
       --hand-offset-x-enter: #{cc(-1220, -1570)};
-      --hand-offset-y-enter: #{cc(-90, -100)};
+      --hand-offset-y-enter: #{cc(-90, -90)};
 
       --hand-rotate: -8deg;
-      --hand-offset-x: #{cc(-220, -470)};
+      --hand-offset-x: #{cc(-220, -580)};
       --hand-offset-y: #{cc(-90, -100)};
 
       --hand-animation-speed: 1s;
@@ -121,15 +121,15 @@
     & > :last-child {
       --hand-transform-origin: 0 100%;
       --hand-aspect-ratio: 1072 / 549;
-      --hand-height: #{cc(280, 549)};
+      --hand-height: #{cc(280, 730)};
 
       --hand-rotate-enter: 50deg;
       --hand-offset-x-enter: #{cc(1170, 1360)};
       --hand-offset-y-enter: #{cc(110, 130)};
 
       --hand-rotate: 7deg;
-      --hand-offset-x: #{cc(170, 360)};
-      --hand-offset-y: #{cc(110, 130)};
+      --hand-offset-x: #{cc(170, 440)};
+      --hand-offset-y: #{cc(110, 150)};
 
       --hand-animation-speed: 1s;
       --hand-animation-speed-delay: 0s;
