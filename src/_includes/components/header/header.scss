@@ -14,7 +14,7 @@
   }
 
   .c-logo {
-    animation: 2s fadeInUp 0.5s forwards;
+    animation: 1.5s fadeIn 0.7s forwards ease-in-out;
     opacity: 0;
   }
 
@@ -80,7 +80,11 @@
       left: 50%;
       transform: translateX(-50%) translateY(-50%) translateY(var(--hand-offset-y)) translateX(var(--hand-offset-x)) rotate(var(--hand-rotate));
       height: var(--hand-height);
-      animation: var(--hand-animation-speed) handEnter var(--hand-animation-speed-delay) forwards;
+      animation: var(--hand-animation-speed) handEnter var(--hand-animation-speed-delay) forwards ease-in-out;
+
+      @media (prefers-reduced-motion: reduce) {
+        animation: none;
+      }      
     }
 
     $settings: (
@@ -149,15 +153,3 @@
     opacity: 1;
   }
 }
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-

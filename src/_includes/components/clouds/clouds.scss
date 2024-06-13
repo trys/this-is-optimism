@@ -1,0 +1,67 @@
+@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
+
+.c-sky {
+  pointer-events: none;
+  z-index: -2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 200%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.c-cloud {
+  position: absolute;
+  animation: var(--cloud-speed) var(--cloud-delay) moveClouds linear var(--cloud-repeats, infinite);
+  right: 100%;
+  top: var(--cloud-top);
+  max-width: 40vw;
+
+  $settings: (
+    "minWidth": 320,
+    "maxWidth": 1440,
+    "usePx": true,
+  );
+
+  @function cc($min, $max) {
+    @return utopia.calculateClamp(map-merge($settings, (
+      "minSize": $min,
+      "maxSize": $max,
+    )));
+  }
+
+  &--3 {
+    --cloud-top: #{cc(40, 137)};
+    --cloud-delay: -380s;
+    --cloud-speed: 450s;
+    --cloud-repeats: 1;
+  }
+
+  &--4 {
+    --cloud-top: #{cc(450, 370)};
+    --cloud-delay: -40s;
+    --cloud-speed: 380s;
+  }
+
+  &--2 {
+    --cloud-top: 820px;
+    --cloud-delay: -25s;
+    --cloud-speed: 420s;
+  }
+    
+  &--1 {
+    --cloud-top: 830px;
+    --cloud-delay: -350s;
+    --cloud-speed: 400s;
+  }
+}
+
+@keyframes moveClouds {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100vw) translateX(100%);
+  }
+}
