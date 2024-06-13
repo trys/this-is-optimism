@@ -9,7 +9,7 @@ module.exports = {
   tickets: {
     cost: '£389+VAT',
     cta: {
-      link: '#',
+      link: 'https://ti.to/berst/this-is-optimism',
       label: 'Get notified'
     }
   }
