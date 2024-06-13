@@ -1,0 +1,13 @@
+<header class="c-header">
+  <div class="c-header__hands">
+    {{ c('hand-left') }}
+    {{ c('hand-right') }}
+  </div>
+
+  <div class="o-wrap">
+    {{ c('logo') }}
+    <h2>
+        <strong>{{ params.event.date.name }}</strong> <a target="_blank" rel="noreferrer" href="{{ params.event.location.map }}">{{ params.event.location.name }}</a>
+    </h2>
+  </div>
+</header>

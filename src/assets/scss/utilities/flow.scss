@@ -1,0 +1,11 @@
+.u-flow--10 > * + * {
+  margin-top: 0.625rem;
+}
+
+.u-flow--20 > * + * {
+  margin-top: 1.25rem;
+}
+
+.u-flow--content > * + * {
+  margin-top: var(--space-30-40);
+}

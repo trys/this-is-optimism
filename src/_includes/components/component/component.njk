@@ -1,0 +1,3 @@
+{% macro c(name, params, folder) %}
+  {% include "../" + (folder or name) + "/" + name + ".njk" %}
+{% endmacro %}

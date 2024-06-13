@@ -1,0 +1,31 @@
+@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
+
+.c-footer {
+  padding-block: var(--gutter-in);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-20-40);
+  padding-right: var(--gutter-in);
+
+  svg {
+    flex-basis: var(--space-100-120); 
+
+    height: var(--space-100-120);
+    width: var(--space-100-120);
+  }
+
+  p {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 70%;
+
+    margin-right: calc(-1 * #{utopia.calculateClamp((
+      "minWidth": $maxWidth,
+      "maxWidth": $maxWidth + $maxGutter * 2,
+      "minSize": 0,
+      "maxSize": 10,
+      "usePx": true,
+    ))});
+  }
+}

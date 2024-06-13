@@ -1,9 +1,6 @@
+{%- from "components/component/component.njk" import c -%}
 {% extends "page.njk" %}
 
-{% block content %}
-{{ content | safe }}
-{% endblock %}
-
-{% block afterContent %}
-  {% include "components/tickets/tickets.njk" %}
-{% endblock %}
+{% set afterContent %}
+  {{ c('tickets', { event: event }) }}
+{% endset %}

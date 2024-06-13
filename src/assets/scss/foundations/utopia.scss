@@ -9,9 +9,12 @@ $maxGutter: 50;
     "minWidth": $minWidth,
     "maxWidth": $maxWidth,
     "pairs": (
+      (20, 40),
       (25, 50),
       (30, 60),
-      (30, 40)
+      (30, 45),
+      (30, 40),
+      (100, 120)
     ),
     "usePx": true
   ));
@@ -28,8 +31,4 @@ $maxGutter: 50;
   --site-width: 48rem;
   --gutter-out: var(--space-25-50);
   --gutter-in: var(--space-30-60);
-
-  --step-0: 1rem;
-  --step-1: 1.5rem;
-  --step-2: var(--type-28-32);
 }

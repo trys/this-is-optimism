@@ -1,0 +1,17 @@
+@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
+
+.c-logo {
+  max-inline-size: 469px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-bottom: 0.5rem;
+  inline-size: #{utopia.calculateClamp((
+    "minWidth": 320,
+    "maxWidth": 768,
+    "usePx": true,
+    "minSize": 270,
+    "maxSize": 469,
+  ))};
+}

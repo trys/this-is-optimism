@@ -4,6 +4,7 @@ module.exports = {
   },
   location: {
     name: 'Artelium Wine Estate, Sussex',
+    map: 'https://maps.app.goo.gl/BWqJYd4bFRXeJYJUA'
   },
   tickets: {
     cost: '£389+VAT',

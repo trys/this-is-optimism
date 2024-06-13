@@ -1,0 +1,19 @@
+.c-tickets {
+  background: var(--orange-5);
+  padding: var(--gutter-in);
+  border-bottom: 0.25rem solid var(--black);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-30-45);
+
+  & > :last-child {
+    flex-basis: clamp(200px, 30vw, 257px); 
+    flex-grow: 1;
+  }
+
+  & > :first-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+  }
+}

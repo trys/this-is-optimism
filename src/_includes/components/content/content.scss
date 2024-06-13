@@ -1,0 +1,19 @@
+.c-content {
+  padding: var(--gutter-in);
+  background: var(--white);
+
+  h1,
+  h2 {
+    font-weight: var(--font-weight-heading);
+    letter-spacing: var(--letter-spacing-heading);
+    font-size: var(--step-3);
+    line-height: var(--line-height-heading);
+  }
+
+  h3,
+  > p:first-of-type {
+    font-weight: var(--font-weight-lede);
+    font-size: var(--step-2);
+    line-height: var(--line-height-lede);
+  }
+}

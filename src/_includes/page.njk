@@ -2,24 +2,12 @@
 
 {% block inner %}
 
-    <header class="o-wrap c-header">
-        <h1>{{ title }}</h1>
-        {% if subtitle %}
-            <h2>
-                <span>{{ event.date.name }}</span> <span>{{ event.location.name }}</span>
-            </h2>
-        {% endif %}
-    </header>
+    {{ c('header', { title: title, event: event }) }}
 
-    <main class="o-wrap">
-        <div class="c-content">
-            {% block content %}{% endblock %}
-        </div>
-        {% block afterContent %}{% endblock %}
+    <main class="o-wrap o-wrap--offset">
+        {{ c('content', { content: content, afterContent: afterContent }) }}
     </main>
 
-    <footer class="o-wrap c-footer">
-        This is Optimism is a Berst venture. We’re a product invention studio from nearby Brighton. After feeling rather frustrated at not being able to find an event we wanted to go to, we decided to try our own.
-    </footer>
+    {{ c('footer') }}
 
 {% endblock %}

@@ -1,3 +1,20 @@
 :root {
+  --font-fallback-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   --font-sans: 'Bricolage Grotesque';
+
+  --step--1: 1rem;
+  --step-0: 1.125rem;
+  --step-1: 1.25rem;
+  --step-2: 1.5rem;
+  --step-3: var(--type-28-32);
+
+  --line-height-body: 1.4;
+  --line-height-lede: 1.2;
+  --line-height-heading: 1.2;
+
+  --font-weight-body: 400;
+  --font-weight-lede: 500;
+  --font-weight-heading: 700;
+
+  --letter-spacing-heading: -0.02em;
 }

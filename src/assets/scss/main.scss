@@ -6,7 +6,12 @@
 
 @import './objects/grid.scss';
 
-@import './components/header.scss';
-@import './components/footer.scss';
-@import './components/content.scss';
-@import './components/tickets.scss';
+@import '../../_includes/components/header/header.scss';
+@import '../../_includes/components/footer/footer.scss';
+@import '../../_includes/components/content/content.scss';
+@import '../../_includes/components/tickets/tickets.scss';
+@import '../../_includes/components/button/button.scss';
+@import '../../_includes/components/logo/logo.scss';
+
+@import './utilities/flow.scss';
+@import './utilities/typography.scss';

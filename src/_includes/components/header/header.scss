@@ -1,0 +1,163 @@
+@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
+
+.c-header {
+  padding-block: var(--gutter-in);
+  text-align: center;
+  height: 562px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  @media (max-width: 30em) {
+    z-index: 1;
+  }
+
+  .c-logo {
+    animation: 2s fadeInUp 0.5s forwards;
+    opacity: 0;
+  }
+
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0 2rem;
+    animation: 2s fadeIn 1.5s forwards;
+    opacity: 0;
+    
+    & > :first-child {
+      font-size: var(--step-1);
+    }
+
+    @media (hover:hover) {
+      a:hover {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        text-decoration-thickness: 1px;
+      }
+    }
+
+    @media (min-width: 40em) {
+      flex-direction: row;
+
+      & > :last-child {
+        font-size: var(--step-1);
+      }
+
+      & > * + * {
+        position: relative;
+        
+        &::before {
+          color: var(--white);
+          content: '•';
+          font-size: 1.5em;
+          position: absolute;
+          right: 100%;
+          top: 50%;
+          transform: translateX(-.6rem) translateY(-55%);
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  &__hands {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    > * {
+      transform-origin: var(--hand-transform-origin);
+      position: absolute;
+      aspect-ratio: var(--hand-aspect-ratio);
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) translateY(var(--hand-offset-y)) translateX(var(--hand-offset-x)) rotate(var(--hand-rotate));
+      height: var(--hand-height);
+      animation: var(--hand-animation-speed) handEnter var(--hand-animation-speed-delay) forwards;
+    }
+
+    $settings: (
+      "minWidth": 320,
+      "maxWidth": 768,
+      "usePx": true,
+    );
+
+    @function cc($min, $max) {
+      @return utopia.calculateClamp(map-merge($settings, (
+        "minSize": $min,
+        "maxSize": $max,
+      )));
+    }
+    
+    & > :first-child {
+      --hand-transform-origin: 0 0;
+      --hand-aspect-ratio: 1245 / 519;
+      --hand-height: #{cc(260, 519)};
+
+      --hand-rotate-enter: -48deg;
+      --hand-offset-x-enter: #{cc(-1220, -1570)};
+      --hand-offset-y-enter: #{cc(-90, -100)};
+
+      --hand-rotate: -8deg;
+      --hand-offset-x: #{cc(-220, -470)};
+      --hand-offset-y: #{cc(-90, -100)};
+
+      --hand-animation-speed: 1s;
+      --hand-animation-speed-delay: 0s;
+    }
+
+    & > :last-child {
+      --hand-transform-origin: 0 100%;
+      --hand-aspect-ratio: 1072 / 549;
+      --hand-height: #{cc(280, 549)};
+
+      --hand-rotate-enter: 50deg;
+      --hand-offset-x-enter: #{cc(1170, 1360)};
+      --hand-offset-y-enter: #{cc(110, 130)};
+
+      --hand-rotate: 7deg;
+      --hand-offset-x: #{cc(170, 360)};
+      --hand-offset-y: #{cc(110, 130)};
+
+      --hand-animation-speed: 1s;
+      --hand-animation-speed-delay: 0s;
+    }
+  }
+}
+
+@keyframes handEnter {
+  from {
+    transform: translateX(-50%) translateY(-50%) translateY(var(--hand-offset-y-enter)) translateX(var(--hand-offset-x-enter)) rotate(var(--hand-rotate-enter));
+  }
+  to {
+    transform: translateX(-50%) translateY(-50%) translateY(var(--hand-offset-y)) translateX(var(--hand-offset-x)) rotate(var(--hand-rotate));
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
