@@ -1,12 +1,13 @@
 @use 'node_modules/utopia-core-scss/src/utopia' as utopia;
 
 .c-footer {
-  padding-block: var(--gutter-in);
+  padding-block: var(--gutter-in) var(--space-30-120);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-20-40);
   padding-right: var(--gutter-in);
+  font-size: var(--step--1);
 
   svg {
     flex-basis: var(--space-100-120); 

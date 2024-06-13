@@ -5,15 +5,25 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-30-45);
-
-  & > :last-child {
-    flex-basis: clamp(200px, 30vw, 257px); 
-    flex-grow: 1;
-  }
+  font-size: var(--step--1);
 
   & > :first-child {
     flex-basis: 0;
     flex-grow: 999;
     min-inline-size: 50%;
+
+    p:first-of-type {
+      font-size: var(--step-0);
+    }
   }
+
+  & > :last-child {
+    flex-basis: clamp(200px, 30vw, 257px); 
+    flex-grow: 1;
+
+    p:first-of-type {
+      line-height: var(--line-height-lede);
+    }
+  }
+
 }
