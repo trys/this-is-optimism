@@ -10,7 +10,7 @@ module.exports = {
     cost: '£389+VAT',
     cta: {
       link: 'https://ti.to/berst/this-is-optimism',
-      label: 'Get notified'
+      label: 'Register your interest'
     }
   }
 };
