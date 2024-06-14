@@ -7,7 +7,7 @@ module.exports = {
     map: 'https://maps.app.goo.gl/BWqJYd4bFRXeJYJUA'
   },
   tickets: {
-    cost: '£389+VAT',
+    cost: '£395+VAT',
     cta: {
       link: 'https://ti.to/berst/this-is-optimism',
       label: 'Register your interest'
