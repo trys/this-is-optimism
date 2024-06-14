@@ -19,4 +19,16 @@
     flex-grow: 999;
     min-inline-size: 70%;
   }
+
+  a {
+    color: var(--berst);
+    
+    @media (hover: hover) {
+      &:hover {
+        text-decoration-thickness: 1px;
+        text-decoration-line: underline;
+        color: var(--white);
+      }
+    }
+  }
 }

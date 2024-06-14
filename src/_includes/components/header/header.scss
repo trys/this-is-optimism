@@ -33,9 +33,8 @@
 
     @media (hover:hover) {
       a:hover {
-        text-decoration: underline;
-        text-underline-offset: 2px;
         text-decoration-thickness: 1px;
+        text-decoration-line: underline;
       }
     }
 

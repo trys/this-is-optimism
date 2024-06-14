@@ -20,4 +20,15 @@
   p:not(:first-of-type) + p {
     --flow: 1.2em;
   }
+
+  a {
+    color: var(--orange--1);
+    
+    @media (hover: hover) {
+      &:hover {
+        text-decoration-thickness: 1px;
+        text-decoration-line: underline;
+      }
+    }
+  }
 }
