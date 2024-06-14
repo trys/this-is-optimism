@@ -1,0 +1,13 @@
+.o-links {
+  a:not(.c-button) {
+    color: var(--link-idle, var(--orange--1));
+    
+    @media (hover: hover) {
+      &:hover {
+        text-decoration-thickness: 1px;
+        text-decoration-line: underline;
+        color: var(--link-active, var(--orange));
+      }
+    }
+  }
+}

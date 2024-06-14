@@ -19,6 +19,9 @@
   }
 
   h2 {
+    --link-idle: var(--black);
+    --link-active: var(--black);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,13 +32,6 @@
     
     & > :first-child {
       font-size: var(--step-1);
-    }
-
-    @media (hover:hover) {
-      a:hover {
-        text-decoration-thickness: 1px;
-        text-decoration-line: underline;
-      }
     }
 
     @media (min-width: 45em) {

@@ -1,4 +1,7 @@
 .c-footer {
+  --link-idle: var(--berst);
+  --link-active: var(--white);
+
   padding-block: var(--gutter-in);
   display: flex;
   flex-wrap: wrap;
@@ -20,26 +23,9 @@
     min-inline-size: 70%;
   }
 
-  a {
-    color: var(--berst);
-    
-    @media (hover: hover) {
-      &:hover {
-        text-decoration-thickness: 1px;
-        text-decoration-line: underline;
-        color: var(--white);
-      }
-    }
-  }
-
   .c-credit {
     font-size: var(--step--2);
     margin-top: 1.25rem;
-
-    a {
-      text-decoration-thickness: 1px;
-      text-decoration-line: underline;
-    }
 
     @media (min-width: 40em) {
       text-align: center;
