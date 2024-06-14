@@ -120,15 +120,15 @@
 
     & > :last-child {
       --hand-transform-origin: 0 100%;
-      --hand-aspect-ratio: 1072 / 549;
+      --hand-aspect-ratio: 1361 / 549;
       --hand-height: #{cc(280, 730)};
 
       --hand-rotate-enter: 50deg;
-      --hand-offset-x-enter: #{cc(1170, 1360)};
+      --hand-offset-x-enter: #{cc(1170, 1860)};
       --hand-offset-y-enter: #{cc(110, 130)};
 
       --hand-rotate: 7deg;
-      --hand-offset-x: #{cc(170, 440)};
+      --hand-offset-x: #{cc(244, 632)};
       --hand-offset-y: #{cc(110, 150)};
 
       --hand-animation-speed: 1s;
