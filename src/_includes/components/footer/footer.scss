@@ -1,5 +1,8 @@
 .c-footer {
-  padding-block: var(--gutter-in) var(--space-30-120);
+  --link-idle: var(--berst);
+  --link-active: var(--white);
+
+  padding-block: var(--gutter-in);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -18,5 +21,15 @@
     flex-basis: 0;
     flex-grow: 999;
     min-inline-size: 70%;
+  }
+
+  .c-credit {
+    font-size: var(--step--2);
+    margin-top: 1.25rem;
+
+    @media (min-width: 40em) {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
   }
 }
