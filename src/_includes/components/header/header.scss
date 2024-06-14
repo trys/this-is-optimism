@@ -14,7 +14,7 @@
   }
 
   .c-logo {
-    animation: 1.5s fadeIn 0.7s forwards ease-in-out;
+    animation: 1.5s fadeIn 0.8s forwards ease-in-out;
     opacity: 0;
   }
 
@@ -38,7 +38,7 @@
       }
     }
 
-    @media (min-width: 40em) {
+    @media (min-width: 45em) {
       flex-direction: row;
 
       & > :last-child {
@@ -87,7 +87,7 @@
     }
 
     $settings: (
-      "minWidth": 320,
+      "minWidth": 375,
       "maxWidth": 1000,
       "usePx": true,
       "relativeTo": "viewport-width",
@@ -102,16 +102,16 @@
     
     & > :first-child {
       --hand-transform-origin: 0 0;
-      --hand-aspect-ratio: 1245 / 519;
-      --hand-height: #{cc(260, 680)};
+      --hand-aspect-ratio: 1875 / 633;
+      --hand-height: #{cc(304, 543)};
 
-      --hand-rotate-enter: -48deg;
-      --hand-offset-x-enter: #{cc(-1220, -1570)};
+      --hand-rotate-enter: -50deg;
+      --hand-offset-x-enter: #{cc(-1362, -1710)};
       --hand-offset-y-enter: #{cc(-90, -90)};
 
-      --hand-rotate: -8deg;
-      --hand-offset-x: #{cc(-220, -580)};
-      --hand-offset-y: #{cc(-90, -100)};
+      --hand-rotate: 0deg;
+      --hand-offset-x: #{cc(-362, -710)};
+      --hand-offset-y: #{cc(-145, -180)};
 
       --hand-animation-speed: 1s;
       --hand-animation-speed-delay: 0s;
@@ -119,16 +119,16 @@
 
     & > :last-child {
       --hand-transform-origin: 0 100%;
-      --hand-aspect-ratio: 1361 / 549;
-      --hand-height: #{cc(280, 730)};
+      --hand-aspect-ratio: 1936 / 1115;
+      --hand-height: #{cc(535, 956)};
 
       --hand-rotate-enter: 50deg;
-      --hand-offset-x-enter: #{cc(1170, 1860)};
+      --hand-offset-x-enter: #{cc(1400, 1760)};
       --hand-offset-y-enter: #{cc(110, 130)};
 
-      --hand-rotate: 7deg;
-      --hand-offset-x: #{cc(244, 632)};
-      --hand-offset-y: #{cc(110, 150)};
+      --hand-rotate: 0deg;
+      --hand-offset-x: #{cc(400, 760)};
+      --hand-offset-y: #{cc(240, 350)};
 
       --hand-animation-speed: 1s;
       --hand-animation-speed-delay: 0s;
