@@ -7,7 +7,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: calc(1rem - var(--button-border-width, 0px)) calc(2rem - var(--button-border-width, 0px));
+  padding: calc(1rem - var(--button-border-width, 0px)) calc(1.5rem - var(--button-border-width, 0px));
   border: var(--button-border-width) solid var(--button-border-color);
   background-color: var(--button-background);
   color: var(--button-color);
