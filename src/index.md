@@ -3,10 +3,10 @@ title: This is Optimism
 layout: home
 ---
 
-# A tiny, one-day conference in the Sussex countryside with nice people, good food and thought-provoking talks.
+# A tiny, one-day conference in the Sussex countryside for 100 people who believe we can invent new futures.
 
-This year we’re exploring Kevin Kelly’s notion: Over the long term, the future is decided by optimists.
+This year we’re exploring [Kevin Kelly’s notion](https://x.com/kevin2kelly/status/459723553642778624?lang=en-GB) that 'over the long term, the future is decided by optimists'.
 
-Agree? Not sure? We’ve invited some brilliant people to help you decide. You’ll hear from designers, storytellers and neuroscientists while enjoying the beautiful surroundings of the Artelium Wine Estate. 
+Agree? Not sure? We’re inviting some brilliant people to help you decide. You’ll hear from designers, storytellers and neuroscientists all while enjoying the beautiful surroundings of the [Artelium Wine Estate](https://www.artelium.com/). 
 
-If none of that works you can rely on a healthy picnic lunch, excellent coffee or just wait until the closing feast to find out what everyone else thinks.
+Come along and meet nice people, enjoy good food and some thought-provoking conversations. And a tombola.
