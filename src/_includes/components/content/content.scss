@@ -161,10 +161,9 @@
     @media (max-width: 58.125rem) {
       figure,
       p:has(img:only-child) {
-        margin-inline: calc(-1 * var(--gutter-in));
-        width: calc(100% + var(--gutter-in) * 2);
+        margin-inline: var(--figure-margin, calc(-1 * var(--gutter-in)));
+        width: var(--figure-width, calc(100% + var(--gutter-in) * 2));
       }
     }
-
   }
 }

@@ -1,0 +1,9 @@
+<figure class="c-collage">
+  <figure>{{ c('collage-image', params.images[0]) }}{{ c('collage-image', params.images[2]) }}</figure>
+  <div>
+    {{ params.content | safe }}
+    {{ c('collage-image', params.images[1]) }}
+  </div>
+  {{ c('collage-image', params.images[1]) }}
+  {{ c('collage-image', params.images[2]) }}
+</figure>
