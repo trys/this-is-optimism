@@ -9,3 +9,7 @@
 .u-flow--content > * + * {
   margin-top: var(--flow, var(--space-30-40));
 }
+
+.u-flow--60 > * + * {
+  margin-top: 3.75rem;
+}

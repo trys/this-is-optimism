@@ -1,6 +1,6 @@
 module.exports = {
   date: {
-    name: 'Friday 20 September 2024',
+    name: 'Friday 20 Sep 2024',
   },
   location: {
     name: 'Artelium Wine Estate, Sussex',

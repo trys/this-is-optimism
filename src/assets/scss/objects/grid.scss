@@ -9,6 +9,10 @@
     --wrap-width: var(--site-width-home);
   }
 
+  &--content {
+    --wrap-width: calc(var(--site-width-content) + var(--gutter-in) * 2);
+  }
+
   &--inline {
     padding-inline: var(--gutter-in);
   }

@@ -4,7 +4,7 @@
 
   &--home {
     h1 {
-      color: var(--blue--2);
+      color: var(--blue--3);
     }
 
     h1,
@@ -37,7 +37,7 @@
     h1,
     h2,
     h3 {
-      color: var(--blue--2);
+      color: var(--blue--3);
     }
 
     h1 {
@@ -75,8 +75,8 @@
     }
 
     > p:first-of-type {
-      color: var(--blue--2);
-      font-weight: var(--font-weight-lede);
+      color: var(--blue--3);
+      font-weight: var(--font-weight-body);
       font-size: var(--step-2);
       line-height: var(--line-height-body);
     }
@@ -107,7 +107,7 @@
       p {
         font-size: var(--type-28-36);
         font-weight: var(--font-weight-body);
-        color: var(--blue--2);
+        color: var(--blue--3);
         max-width: 634px;
       }
 
@@ -144,7 +144,7 @@
 
       &::marker {
         font-weight: var(--font-weight-regular);
-        color: var(--blue--2);
+        color: var(--blue--3);
       }
     }
 
