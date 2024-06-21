@@ -31,6 +31,8 @@ We expect anyone we ask to stop harassing behaviour to comply immediately. We 
 
 The staff from This is Optimism are no exception to these rules. If you wish to raise a complaint about any of us, please firstly raise it with another member, before approaching us.
 
+![Alt](/static/img/feast.jpg)
+
 In short, be kind, tolerant and remember that every one of us has a different lived experience. After all, that’s also what makes life wonderful. 
 
 1. A simple ordered list
@@ -40,7 +42,14 @@ In short, be kind, tolerant and remember that every one of us has a different li
 
 #### Code of conduct
 
-Eget cursus a condimentum faucibus sit pellentesque. Tellus viverra nullam pretium proin turpis. Amet praesent ultrices nec sit laoreet enim arcu. Tortor mi donec quisque dui arcu bibendum faucibus id. Et a tellus semper amet nec venenatis quis. Viverra arcu eget neque diam sed aliquam vel. Nisi eu ultrices ut ornare senectus eget mi. Praesent nam sed a cursus lobortis condimentum faucibus magna. Ut suscipit id vitae iaculis risus aenean a. Leo varius quis egestas viverra. Vestibulum non tortor phasellus risus. Amet et id nulla euismod etiam dolor lacinia enim. Mauris id eget non a orci fermentum arcu lorem. Adipiscing lectus in blandit ullamcorper.
+Eget cursus a condimentum faucibus sit pellentesque. Tellus viverra nullam pretium proin turpis. Amet praesent ultrices nec sit laoreet enim arcu. Tortor mi donec quisque dui arcu bibendum faucibus id. Et a tellus semper amet nec venenatis quis. Viverra arcu eget neque diam sed aliquam vel. Nisi eu ultrices ut ornare senectus eget mi. Praesent nam sed a cursus lobortis condimentum faucibus magna.
+
+<figure>
+  <img src="/static/img/feast.jpg" alt="Alt text" />
+  <figcaption>A simple image caption</figcaption>
+</figure>
+
+Ut suscipit id vitae iaculis risus aenean a. Leo varius quis egestas viverra. Vestibulum non tortor phasellus risus. Amet et id nulla euismod etiam dolor lacinia enim. Mauris id eget non a orci fermentum arcu lorem. Adipiscing lectus in blandit ullamcorper.
 
 ##### Heading 5
 
