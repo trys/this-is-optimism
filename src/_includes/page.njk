@@ -2,10 +2,15 @@
 
 {% block inner %}
 
-    {{ c('header', { title: title, event: event }) }}
+    {{ c('header', {
+        title: title,
+        event: event,
+        withHeaderHands: withHeaderHands,
+        navigation: navigation
+    }) }}
 
-    <main class="o-wrap o-wrap--offset">
-        {{ c('content', { content: content, afterContent: afterContent }) }}
+    <main class="o-wrap o-wrap--{{ contentSize }}">
+        {{ c('content', { content: content, afterContent: afterContent, style: contentStyle }) }}
     </main>
 
     {{ c('footer') }}

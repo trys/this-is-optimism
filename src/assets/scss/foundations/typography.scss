@@ -1,21 +1,53 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3867246, 2020-12-16T11:57:38-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: undefined by undefined
+ * URL: https://www.myfonts.comundefined
+ * Copyright: Copyright © 2024 Monotype Imaging Inc. All rights reserved.
+ * 
+ * © 2024 MyFonts Inc. */
+  
+@font-face {
+  font-display: swap;
+  font-family: "GaturBlack";
+  src: url('../fonts/gatur/font.woff2') format('woff2'), url('../fonts/gatur/font.woff') format('woff');
+}
+
+
 :root {
   --font-fallback-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   --font-sans: 'Bricolage Grotesque';
+  --font-super: 'GaturBlack';
 
-  --step--2: 0.75rem;
+  --step--3: 0.75rem;
+  --step--2: 0.875rem;
   --step--1: 1rem;
   --step-0: 1.125rem;
   --step-1: 1.25rem;
   --step-2: 1.5rem;
   --step-3: var(--type-28-32);
+  --step-4: var(--type-32-36);
+  --step-5: var(--type-36-42);
+  --step-6: var(--type-48-64);
 
   --line-height-body: 1.4;
   --line-height-lede: 1.2;
   --line-height-heading: 1.2;
+  --line-height-super: 1;
 
+  --font-weight-light: 300;
   --font-weight-body: 400;
   --font-weight-lede: 500;
   --font-weight-heading: 700;
+  --font-weight-extra: 800;
+  --font-weight-super: 900;
 
   --letter-spacing-heading: -0.02em;
 }

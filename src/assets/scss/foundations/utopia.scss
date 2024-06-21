@@ -1,6 +1,6 @@
 @use 'node_modules/utopia-core-scss/src/utopia' as utopia;
 
-$minWidth: 320;
+$minWidth: 375;
 $maxWidth: 768;
 $maxGutter: 50;
 
@@ -9,12 +9,15 @@ $maxGutter: 50;
     "minWidth": $minWidth,
     "maxWidth": $maxWidth,
     "pairs": (
+      (12, 20),
+      (15, 30),
       (20, 40),
       (25, 50),
       (30, 60),
       (30, 120),
       (30, 45),
       (30, 40),
+      (72, 100),
       (100, 120)
     ),
     "usePx": true,
@@ -26,12 +29,18 @@ $maxGutter: 50;
     "maxWidth": $maxWidth,
     "pairs": (
       (28, 32),
+      (28, 36),
+      (32, 36),
+      (36, 42),
+      (48, 64),
     ),
     "prefix": "type-",
     "relativeTo": "viewport-width",
   ));
 
-  --site-width: 48rem;
+  --site-width: 68.125rem;
+  --site-width-home: 50.625rem;
+  --site-width-content: 50.625rem;
   --gutter-out: var(--space-25-50);
   --gutter-in: var(--space-30-60);
 }
