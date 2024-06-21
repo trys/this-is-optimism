@@ -7,5 +7,5 @@ contentStyle: prose
 {% extends "page.njk" %}
 
 {% set afterContent %}
-  {{ c('speakers', { speakers: speakers }) }}
+  {{ c('speakers', { speakers: collections.speakers | orderByOrder }) }}
 {% endset %}

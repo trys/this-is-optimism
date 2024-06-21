@@ -4,6 +4,10 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("./src/static");
 
+  eleventyConfig.addFilter("orderByOrder", (values) => {
+    return values.sort((a, b) => a.data.order - b.data.order);
+  });
+
   return {
     dir: {
       input: "src",

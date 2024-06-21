@@ -1,13 +1,13 @@
 <article class="c-speaker">
   <figure>
-    <img src="{{ params.image }}" alt="{{ params.name }}" loading="lazy" />
+    <img src="{{ params.data.image }}" alt="{{ data.params.name }}" loading="lazy" />
   </figure>
   <div class="c-speaker__content">
-    <h2>{{ params.name }}</h2>
-    <h3>{{ params.profession }}</h3>
-    <div class="c-speaker__bio u-flow--10">{{ params.bio | safe }}</div>
+    <h2>{{ params.data.title }}</h2>
+    <h3>{{ params.data.profession }}</h3>
+    <div class="c-speaker__bio u-flow--10">{{ params.content | safe }}</div>
     <ul class="c-speaker__links">
-      {% for item in params.links %}
+      {% for item in params.data.links %}
         <li class="o-links">
           <a href="{{ item.url }}">
             {% if item.type == 'linkedin' %}
