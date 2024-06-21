@@ -3,7 +3,7 @@ title: This is Optimism
 layout: home
 ---
 
-# A tiny, one-day conference in the Sussex countryside for 100 people who believe we have the power to invent better futures.
+# A tiny, one-day conference in the Sussex countryside for 100 people who want to invent better futures.
 
 This year we’re exploring [Kevin Kelly’s belief](https://x.com/kevin2kelly/status/459723553642778624?lang=en-GB) that 'over the long term, the future is decided by optimists'.
 
