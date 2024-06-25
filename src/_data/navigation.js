@@ -1,14 +1,13 @@
 module.exports = {
   header: [
+    { label: 'About', url: '#' },
     { label: 'Speakers', url: '/speakers' },
     { label: 'Venue', url: '/venue' },
     { label: 'Food', url: '#' },
-    { label: 'Why attend', url: '#' },
-    { label: 'Code of conduct', url: '/code-of-conduct', secondary: true },
   ],
   footer: [
     { label: 'Code of conduct', url: '/code-of-conduct' },
-    { label: 'Reasons to attend', url: '#' },
-    { label: 'Privacy policy', url: '#' },
+    { label: 'Questions', url: '/questions' },
+    { label: 'Privacy policy', url: '/privacy-policy' },
   ]
 }
