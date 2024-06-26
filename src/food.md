@@ -6,31 +6,35 @@ layout: content
 
 # Food
 
-Food is well nice.
+Our food on the day comes courtesy of [Bakestone](https://www.bakestone.uk/), founded by Hannah Thomas.
 
 {% set collageContent %}
-Class aptent <strong>taciti sociosqu</strong> ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar massa vitae sem ultricies, a tempus ligula consequat. Pellentesque dapibus, augue in condimentum ultricies, quam orci mollis augue, quis feugiat ipsum velit ut ex.
+Based in the South Downs, Bakestone celebrates the seasons, gathering local, sustainably-farmed provisions to create memorable culinary experiences. They cook naturally and thoughtfully to reflect the time and space, paying attention to detailed flavour and trends. They take high-quality ingredients, cook from scratch and bring them to you crafted with care.
 
-Sed nec tincidunt ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare diam ut faucibus varius. Aenean luctus scelerisque neque.
+Hannah is an intuitive, self-taught chef who has gained her experience through hosting her own events and working in various kitchens across the country. Notable experiences include working at a beachside fish & open fire restaurant and more recently a weekly baking, menu planning, and monthly wood fire supper club at the Kinsbrook vineyard.
+
+Bakestone make special events come to life and we can’t wait to feast with them.
+
+[Visit the Bakestone website](https://www.bakestone.uk/)
 {% endset %}
 
 {{ c('collage', {
   content: collageContent,
   images: [
     {
-      src: '/static/img/artelium.jpg',
+      src: '/static/img/bakestone1.jpg',
       alt: 'Alt',
       width: 780,
       height: 960
     },
     {
-      src: '/static/img/feast.jpg',
+      src: '/static/img/bakestone2.jpg',
       alt: 'Alt',
       width: 1620,
       height: 1040
     },
     {
-      src: '/static/img/feast.jpg',
+      src: '/static/img/bakestone3.jpg',
       alt: 'Alt',
       width: 1620,
       height: 1040
