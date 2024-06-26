@@ -4,7 +4,7 @@ module.exports = {
   },
   location: {
     name: 'Artelium Wine Estate, Sussex',
-    map: 'https://maps.app.goo.gl/BWqJYd4bFRXeJYJUA'
+    map: 'https://www.artelium.com/'
   },
   tickets: {
     onSale: true,
