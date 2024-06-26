@@ -4,7 +4,7 @@ title: Emily Macaulay
 profession: Graphic Designer, Bookbinder and Printer
 image: /static/img/emily-macaulay.jpg
 tags: speakers
-order: 3
+order: 5
 links:
   -
     label: stanleyjamespress

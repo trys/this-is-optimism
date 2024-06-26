@@ -15,7 +15,7 @@ So we’re all clear, harassment includes offensive verbal comments related to g
 
 We expect immediate compliance when we ask someone to stop harassing behaviour. We also have the right to take appropriate action, which could include issuing a warning or ejecting the offender from the event without a refund.
 
-The staff from This is Optimism are no exception to these rules. If you wish to raise a complaint about any of us, please firstly raise it with another attendee, before approaching us.
+The staff from This is Optimism are no exception to these rules. If you wish to raise a complaint about any of us, please talk to one of the Berst team.
 
 Simply put, practice kindness, tolerance, and celebrate our unique experiences.
 

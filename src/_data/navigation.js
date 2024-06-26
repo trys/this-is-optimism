@@ -7,7 +7,7 @@ module.exports = {
   ],
   footer: [
     { label: 'Code of conduct', url: '/code-of-conduct' },
-    { label: 'Questions', url: '/questions' },
+    { label: 'Styleguide', url: '/styleguide' },
     { label: 'Privacy policy', url: '/privacy-policy' },
   ]
 }

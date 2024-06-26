@@ -7,9 +7,13 @@ tags: speakers
 order: 1
 links:
   -
-    label: /rachelcoldicutt
-    type: linkedin
-    url: #
+    label: rachelcoldicutt.com
+    type: web
+    url: https://www.rachelcoldicutt.com/
+  -
+    label: @rachelcoldicutt
+    type: twitter
+    url: https://twitter.com/rachelcoldicutt
 ---
 
 Rachel Coldicutt is a researcher and strategist specialising in the social impact of new and emerging technologies She is founder and executive director of research consultancy [Careful Industries](https://www.careful.industries/) and its sister social enterprise [Promising Trouble](https://www.promisingtrouble.net/).
