@@ -1,13 +1,13 @@
 module.exports = {
   header: [
-    { label: 'About', url: '#' },
+    { label: 'Home', url: '/' },
     { label: 'Speakers', url: '/speakers' },
     { label: 'Venue', url: '/venue' },
-    { label: 'Food', url: '#' },
+    { label: 'Food', url: '/food' },
   ],
   footer: [
     { label: 'Code of conduct', url: '/code-of-conduct' },
-    { label: 'Styleguide', url: '/styleguide' },
+    { label: 'Partners', url: '/partners' },
     { label: 'Privacy policy', url: '/privacy-policy' },
   ]
 }

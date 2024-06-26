@@ -6,12 +6,12 @@ layout: content
 
 # Venue
 
-Set in the beautiful surroundings of the Artelium Wine Estate in East Sussex adipiscing commodo elementum bibendum eget. Volutpat sit quam suspendisse elementum sit venenatis ornare. Mauris lacus scelerisque et maecenas amet adipiscing.
+Nestled at the foot of the South Downs, The Artelium Wine Estate is the perfect backdrop for a day of inspiration and escape.
 
 {% set collageContent %}
-Class aptent <strong>taciti sociosqu</strong> ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pulvinar massa vitae sem ultricies, a tempus ligula consequat. Pellentesque dapibus, augue in condimentum ultricies, quam orci mollis augue, quis feugiat ipsum velit ut ex.
+With exclusive access to the venue, there'll be plenty of opportunity to explore throughout the day, whether that's enjoying the art, getting lost in the vines or sampling the beautiful wine.
 
-Sed nec tincidunt ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare diam ut faucibus varius. Aenean luctus scelerisque neque.
+Most of the talks and activities will take place in the barn before we gather for an alfreso feast on the Terrace to close out the day.
 {% endset %}
 
 {{ c('collage', {
@@ -24,13 +24,13 @@ Sed nec tincidunt ligula. Lorem ipsum dolor sit amet, consectetur adipiscing eli
       height: 960
     },
     {
-      src: '/static/img/feast.jpg',
+      src: '/static/img/artelium2.jpg',
       alt: 'Alt',
       width: 1620,
       height: 1040
     },
     {
-      src: '/static/img/feast.jpg',
+      src: '/static/img/artelium3.jpg',
       alt: 'Alt',
       width: 1620,
       height: 1040
