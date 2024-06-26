@@ -11,7 +11,7 @@ links:
     type: web
     url: https://www.rachelcoldicutt.com/
   -
-    label: @rachelcoldicutt
+    label: rachelcoldicutt
     type: twitter
     url: https://twitter.com/rachelcoldicutt
 ---
