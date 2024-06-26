@@ -1,8 +1,8 @@
 ---
 permalink: false
 title: Emily Macaulay
-profession: Designer
-image: /static/img/feast.jpg
+profession: Graphic Designer, Bookbinder and Printer
+image: /static/img/emily-macaulay.jpg
 tags: speakers
 order: 3
 links:
@@ -12,4 +12,4 @@ links:
     url: https://www.stanleyjamespress.com/
 ---
 
-Emily is a wonderful human
+Bio coming soon…
