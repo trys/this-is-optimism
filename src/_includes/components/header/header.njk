@@ -1,13 +1,17 @@
-<header class="c-header">
-  <div class="c-header__hands">
-    {{ c('hand-left') }}
-    {{ c('hand-right') }}
-  </div>
+<header class="c-header{{ ' c-header--with-hands' if params.withHeaderHands }}">
+  {% if params.withHeaderHands %}
+    <div class="c-header__hands">
+      {{ c('hand-left') }}
+      {{ c('hand-right') }}
+    </div>
+  {% endif %}
 
-  <div class="o-wrap">
+  <div class="c-header__content o-wrap">
     {{ c('logo') }}
     <h2 class="o-links">
         <strong>{{ params.event.date.name }}</strong> <a target="_blank" rel="noreferrer" href="{{ params.event.location.map }}">{{ params.event.location.name }}</a>
     </h2>
   </div>
+
+  {{ c('navigation', { navigation: params.navigation, event: params.event }) }}
 </header>

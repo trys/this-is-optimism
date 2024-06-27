@@ -2,12 +2,17 @@
 
 {% block inner %}
 
-    {{ c('header', { title: title, event: event }) }}
+    {{ c('header', {
+        title: title,
+        event: event,
+        withHeaderHands: withHeaderHands,
+        navigation: navigation.header
+    }) }}
 
-    <main class="o-wrap o-wrap--offset">
-        {{ c('content', { content: content, afterContent: afterContent }) }}
+    <main class="o-wrap o-wrap--{{ contentSize }}">
+        {{ c('content', { content: content, afterContent: afterContent, style: contentStyle }) }}
     </main>
 
-    {{ c('footer') }}
+    {{ c('footer', { navigation: navigation.footer }) }}
 
 {% endblock %}

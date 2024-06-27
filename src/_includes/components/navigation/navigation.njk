@@ -1,0 +1,12 @@
+<nav class="c-nav">
+  <ul class="c-nav__list">
+    {% for item in params.navigation %}
+      <li class="c-nav-link{{ ' c-nav-link--secondary' if item.secondary }}">
+        <a href="{{ item.url }}">{{ item.label }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% if params.event.tickets.onSale %}
+    {{ c('button', params.event.tickets.buyCta) }}
+  {% endif %}
+</nav>

@@ -1,21 +1,70 @@
 @use 'node_modules/utopia-core-scss/src/utopia' as utopia;
 
 .c-header {
-  padding-block: var(--gutter-in);
+  $settings: (
+    "minWidth": 375,
+    "maxWidth": 1000,
+    "usePx": true,
+    "relativeTo": "viewport-width",
+  );
+
+  @function cc($min, $max) {
+    @return utopia.calculateClamp(map-merge($settings, (
+      "minSize": $min,
+      "maxSize": $max,
+    )));
+  }
+
+  --min-height: 320px;
+
+  padding-block: 2.5rem;
   text-align: center;
-  height: 562px;
+  min-height: var(--min-height);
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  flex-direction: column;
   position: relative;
   
-  @media (max-width: 30em) {
-    z-index: 1;
+  @media (min-width: 43em) {
+    --min-height: 300px;
+
+    justify-content: flex-start;
   }
 
   .c-logo {
-    animation: 1.5s fadeIn 0.8s forwards ease-in-out;
-    opacity: 0;
+    max-width: #{cc(240, 280)};
+  }
+
+  &--with-hands {
+    --links-size: var(--step-1);
+    --content-offset: #{cc(-85, 10)};
+    --min-height: 580px;
+
+    min-height: var(--min-height);
+
+    .c-logo {
+      animation: 1.5s fadeIn 0.8s forwards ease-in-out;
+      opacity: 0;
+      max-width: #{cc(240, 469)};
+    }
+
+    h2 {
+      opacity: 0;
+      animation: 2s fadeIn 1.5s forwards;
+    }
+
+    .c-header__content {
+      position: absolute;
+      left: 50%;
+      width: 100%;
+      top: 50%;
+      transform: translate(-50%, -50%) translateY(var(--content-offset));
+    }
+
+    @media (min-width: 43em) {
+      --min-height: 542px;
+    }
   }
 
   h2 {
@@ -27,19 +76,11 @@
     align-items: center;
     flex-direction: column;
     gap: 0 2rem;
-    animation: 2s fadeIn 1.5s forwards;
-    opacity: 0;
-    
-    & > :first-child {
-      font-size: var(--step-1);
-    }
+    font-size: var(--step--2);
 
-    @media (min-width: 45em) {
+    @media (min-width: 43em) {
       flex-direction: row;
-
-      & > :last-child {
-        font-size: var(--step-1);
-      }
+      font-size: var(--links-size, 0.9375rem);
 
       & > * + * {
         position: relative;
@@ -81,20 +122,6 @@
         animation: none;
       }      
     }
-
-    $settings: (
-      "minWidth": 375,
-      "maxWidth": 1000,
-      "usePx": true,
-      "relativeTo": "viewport-width",
-    );
-
-    @function cc($min, $max) {
-      @return utopia.calculateClamp(map-merge($settings, (
-        "minSize": $min,
-        "maxSize": $max,
-      )));
-    }
     
     & > :first-child {
       --hand-transform-origin: 0 0;
@@ -103,11 +130,11 @@
 
       --hand-rotate-enter: -50deg;
       --hand-offset-x-enter: #{cc(-1362, -1710)};
-      --hand-offset-y-enter: #{cc(-90, -90)};
+      --hand-offset-y-enter: #{cc(-120, -90)};
 
       --hand-rotate: 0deg;
-      --hand-offset-x: #{cc(-362, -710)};
-      --hand-offset-y: #{cc(-145, -180)};
+      --hand-offset-x: #{cc(-342, -660)};
+      --hand-offset-y: #{cc(-195, -140)};
 
       --hand-animation-speed: 1s;
       --hand-animation-speed-delay: 0s;
@@ -123,8 +150,8 @@
       --hand-offset-y-enter: #{cc(110, 130)};
 
       --hand-rotate: 0deg;
-      --hand-offset-x: #{cc(400, 760)};
-      --hand-offset-y: #{cc(240, 350)};
+      --hand-offset-x: #{cc(370, 710)};
+      --hand-offset-y: #{cc(120, 350)};
 
       --hand-animation-speed: 1s;
       --hand-animation-speed-delay: 0s;

@@ -1,23 +1,29 @@
 @use 'node_modules/utopia-core-scss/src/utopia' as utopia;
 
 .o-wrap {
-  --wrap-padding: var(--gutter-out);
-
   margin-inline: auto;
-  max-width: calc(var(--site-width) + var(--wrap-padding-start, var(--wrap-padding)) + var(--wrap-padding-end, var(--gutter-out)));
-  padding-inline: var(--wrap-padding-start, var(--wrap-padding)) var(--wrap-padding-end, var(--wrap-padding));
+  max-width: var(--wrap-width, var(--site-width));
   inline-size: 100%;
-}
 
-.o-wrap--offset {
-  --wrap-padding-end: #{utopia.calculateClamp((
-    "minWidth": $maxWidth,
-    "maxWidth": $maxWidth + $maxGutter * 2,
-    "minSize": 0,
-    "maxSize": $maxGutter,
-    "usePx": true,
-    "relativeTo": "viewport-width",
-  ))};
+  &--home {
+    --wrap-width: var(--site-width-home);
+  }
+
+  &--content {
+    --wrap-width: calc(var(--site-width-content) + var(--gutter-in) * 2);
+  }
+
+  &--inline {
+    padding-inline: var(--gutter-in);
+  }
+
+  &--full {
+    background: var(--white);
+  }
+
+  &--full-width {
+    --wrap-width: calc(var(--site-width) + var(--gutter-in) * 2);
+  }
 }
 
 .o-page-wrapper {

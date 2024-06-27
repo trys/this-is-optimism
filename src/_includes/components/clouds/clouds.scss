@@ -9,6 +9,11 @@
   width: 100%;
   height: 1000px;
   overflow: hidden;
+  display: none;
+
+  @media (min-width: 43em) {
+    display: block;
+  }
 }
 
 .c-cloud {

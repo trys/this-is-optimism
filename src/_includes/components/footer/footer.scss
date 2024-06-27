@@ -5,31 +5,98 @@
   padding-block: var(--gutter-in);
   display: flex;
   flex-wrap: wrap;
+  justify-content: stretch;
   align-items: center;
   gap: var(--space-20-40);
-  padding-right: var(--gutter-in);
-  font-size: var(--step--1);
+  
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+    font-size: 0.9375rem;
 
-  svg {
-    flex-basis: var(--space-100-120); 
+    svg {
+      flex-basis: var(--space-100-110);
+      height: var(--space-100-110);
+      width: var(--space-100-110);
+    }
 
-    height: var(--space-100-120);
-    width: var(--space-100-120);
-  }
-
-  p {
-    flex-basis: 0;
-    flex-grow: 999;
-    min-inline-size: 70%;
+    p {
+      flex-basis: 0;
+      flex-grow: 999;
+      min-inline-size: 70%;
+    }
   }
 
   .c-credit {
-    font-size: var(--step--2);
-    margin-top: 1.25rem;
+    font-size: var(--step--3);
+  }
 
-    @media (min-width: 40em) {
-      text-align: center;
-      margin-top: 2.5rem;
+  nav {
+    flex-grow: 1;
+    font-size: 0.9375rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0 var(--space-10-20);
+      min-width: 200px;
+      flex-grow: 1;
+
+      a {
+        display: block;
+        position: relative;
+        padding-block: 0.3125rem;
+
+        &:after {
+          content: '';
+          width: 0.625rem;
+          height: 0.625rem;
+          border-top: 1.5px solid var(--blue--3);
+          border-right: 1.5px solid var(--blue--3);
+          position: absolute;
+          right: 0.5rem;
+          top: 50%;
+          transform: rotate(45deg) translateY(-50%);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 40em) {
+    nav {
+      font-weight: var(--font-weight-heading);
+      flex-basis: 40%;
+
+      ul {
+        flex-direction: row;
+
+        a {
+          padding-block: 0;
+
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 70em) {
+    flex-wrap: nowrap;
+
+    &__content {
+      flex-grow: 2;
+    }
+
+    nav {
+      min-inline-size: 400px;
+      flex-grow: 1.5;
+      justify-content: flex-end;
     }
   }
 }

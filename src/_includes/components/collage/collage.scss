@@ -1,0 +1,65 @@
+.c-collage {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: var(--space-30-60);
+
+  img {
+    background: #FAFAFA;
+  }
+
+  img:only-child {
+    margin: 0;
+  }
+
+  figure img + img {
+    margin-top: 2rem;
+    display: var(--double-image-display, none);
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--collage-gap, 1.2em);
+    padding: var(--space-72-100) var(--gutter-in);
+
+    img {
+      display: var(--double-image-display, none);
+    }
+  }
+
+  @media (min-width: 38rem) {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem;
+
+    --figure-width: 100%;
+    --figure-margin: 0;
+    --double-image-display: block;
+    --offset: min(110px, 20%);
+    --collage-gap: 0;
+
+    div {
+      padding: 0;
+      order: -1;
+      z-index: 1;
+      
+      p {
+        margin-right: calc(-2rem - var(--offset));
+        background: var(--white);
+        padding: 0 var(--gutter-in) 0 0;
+
+        &:not(:first-child) {
+          margin-top: 0;
+          padding-top: 1.2em;
+        }
+
+        &:nth-last-child(2) {
+          padding-bottom: var(--gutter-in);
+        }
+      }
+    }
+
+    > img {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.c-nav {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: var(--space-15-30);
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+  font-size: var(--step--1);
+  padding-inline: 1.25rem;
+  margin-top: auto;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em var(--space-15-30);
+  }
+
+  .c-button {
+    font-size: var(--step--1);
+    border-radius: 2em;
+    padding: 0.625rem 1.25rem;
+  }
+
+  &-link--secondary {
+    display: none;
+  }
+
+  @media (min-width: 43em) {
+    margin-bottom: auto;
+    margin-top: 0;
+    order: -1;
+    font-weight: var(--font-weight-heading);
+  
+    &-link--secondary {
+      display: block;
+    }
+  }
+}
