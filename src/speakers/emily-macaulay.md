@@ -1,7 +1,7 @@
 ---
 permalink: false
 title: Emily Macaulay
-profession: Designer and Founder of the Stanley James Press
+profession: Designer and Founder of Stanley James Press
 image: /static/img/emily-macaulay.jpg
 tags: speakers
 order: 4
