@@ -1,10 +1,10 @@
 ---
 permalink: false
 title: Carlie Goldsmith
-profession: Senior Policy Advisor at Impetus
+profession: Senior Policy Advisor at Impetus and Co-founder of Class Divide
 image: /static/img/carlie-goldsmith.jpg
 tags: speakers
-order: 3
+order: 2
 links:
   -
     label: Class Divide

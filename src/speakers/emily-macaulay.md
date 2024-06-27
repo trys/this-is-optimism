@@ -1,10 +1,10 @@
 ---
 permalink: false
 title: Emily Macaulay
-profession: Graphic Designer, Bookbinder and Printer
+profession: Designer and Founder of the Stanley James Press
 image: /static/img/emily-macaulay.jpg
 tags: speakers
-order: 5
+order: 4
 links:
   -
     label: stanleyjamespress

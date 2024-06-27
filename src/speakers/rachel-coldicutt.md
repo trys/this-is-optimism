@@ -1,7 +1,7 @@
 ---
 permalink: false
 title: Rachel Coldicutt
-profession: Technology strategist and researcher
+profession: Strategist and Founder of Careful Industries
 image: /static/img/rachel-coldicutt.jpg
 tags: speakers
 order: 1

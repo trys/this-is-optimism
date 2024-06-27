@@ -1,10 +1,10 @@
 ---
 permalink: false
 title: Curtis James
-profession: Writer, Presenter & Ethnographer
+profession: Writer and Ethnographer at We are Fieldwork and Co-founder of Class Divide
 image: /static/img/curtis-james.jpg
 tags: speakers
-order: 4
+order: 3
 links:
   -
     label: We are Fieldwork
