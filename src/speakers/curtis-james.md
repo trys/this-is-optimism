@@ -16,4 +16,4 @@ links:
     url: https://www.classdivide.co.uk/
 ---
 
-Curtis done a poo poo
+Bio coming soon…

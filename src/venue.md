@@ -19,19 +19,19 @@ Most of the talks and activities will take place in the barn before we gather fo
   images: [
     {
       src: '/static/img/artelium.jpg',
-      alt: 'Alt',
+      alt: 'View of the vineyard and South Downs',
       width: 780,
       height: 960
     },
     {
       src: '/static/img/artelium2.jpg',
-      alt: 'Alt',
+      alt: 'People enjoying wine on the terrace',
       width: 1620,
       height: 1040
     },
     {
       src: '/static/img/artelium3.jpg',
-      alt: 'Alt',
+      alt: 'Artelium tasting room',
       width: 1620,
       height: 1040
     }

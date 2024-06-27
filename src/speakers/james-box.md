@@ -16,4 +16,4 @@ James is an author and design industry OAP. He co-founded Berst in 2019 with Jam
 
 Prior to Berst, he was Design Director at pioneering studio Clearleft, where he built one of the country’s leading design teams and helped curate some of Europe’s most successful design events. He also co-authored the best-selling book Undercover UX Design and has spoken at design events all over the world.
 
-Alongside his friend and colleague Alis Cox, he's curated This is Optimism and, unfortunately for you, will be the host for the day.
+Alongside his friend and colleague Alis Cox, he's curated This is Optimism and, unfortunately for you, will be your host for the day.

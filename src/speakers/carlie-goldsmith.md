@@ -7,6 +7,10 @@ tags: speakers
 order: 2
 links:
   -
+    label: Impetus
+    type: web
+    url: https://www.impetus.org.uk/
+  -
     label: Class Divide
     type: web
     url: https://www.classdivide.co.uk/

@@ -1,6 +1,6 @@
 .o-links {
   a:not(.c-button) {
-    color: var(--link-idle, var(--orange--1));
+    color: var(--link-idle, var(--orange));
 
     @media (hover: hover) {
       &:hover {

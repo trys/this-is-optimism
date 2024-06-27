@@ -22,22 +22,22 @@ Bakestone make special events come to life and we can’t wait to feast with the
   content: collageContent,
   images: [
     {
-      src: '/static/img/bakestone1.jpg',
-      alt: 'Alt',
+      src: '/static/img/bakestone4.jpg',
+      alt: 'Various salad plates',
       width: 780,
       height: 960
     },
     {
-      src: '/static/img/bakestone2.jpg',
-      alt: 'Alt',
-      width: 1620,
-      height: 1040
+      src: '/static/img/bakestone5.jpg',
+      alt: 'Lunch salads and pickles',
+      width: 800,
+      height: 600
     },
     {
-      src: '/static/img/bakestone3.jpg',
-      alt: 'Alt',
-      width: 1620,
-      height: 1040
+      src: '/static/img/bakestone2.jpg',
+      alt: 'Peaches and pancakes',
+      width: 750,
+      height: 750
     }
   ]
 }) }}
