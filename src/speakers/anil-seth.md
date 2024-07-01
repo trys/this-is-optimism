@@ -11,7 +11,7 @@ links:
     type: web
     url: https://www.anilseth.com
   -
-    label: anilkseth
+    label: "@anilkseth"
     type: twitter
     url: https://twitter.com/anilkseth
 ---

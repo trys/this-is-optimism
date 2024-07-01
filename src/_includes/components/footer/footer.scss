@@ -97,6 +97,10 @@
       min-inline-size: 400px;
       flex-grow: 1.5;
       justify-content: flex-end;
+
+      ul {
+        justify-content: flex-end;
+      }
     }
   }
 }
