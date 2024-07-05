@@ -1,14 +1,12 @@
 <aside class="c-tickets">
   <div class="u-flow--10">
-    <p>
-      <strong>Tickets are {{ params.event.tickets.cost }}</strong> and go on sale at 10am on Friday 5th July.
-    </p>
-
-    <p>Includes delicious food and drink throughout the day plus optional travel to and from Brighton or Haywards Heath station on the Optimismobile™️.</p>
+  <p>
+    <strong>Tickets are {{ params.event.tickets.cost }}</strong> and on sale now
+  </p>
+  {{ c('button', params.event.tickets.signUpCta )}}
   </div>
 
   <div class="u-flow--20">
-    <p><strong>Register your interest on our Tito page and we’ll email you as soon as they are released.</strong></p>
-    {{ c('button', params.event.tickets.signUpCta )}}
+    <p>This price includes delicious food and drink throughout the day plus optional travel to and from Brighton or Haywards Heath station on the Optimismobile™️.</p>
   </div>
 </aside>

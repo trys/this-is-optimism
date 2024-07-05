@@ -11,11 +11,11 @@ module.exports = {
     cost: '£389+VAT',
     buyCta: {
       link: 'https://ti.to/berst/this-is-optimism',
-      label: 'Register your interest'
+      label: 'Buy your golden ticket'
     },
     signUpCta: {
       link: 'https://ti.to/berst/this-is-optimism',
-      label: 'Register your interest'
+      label: 'Buy your golden ticket'
     }
   }
 };
