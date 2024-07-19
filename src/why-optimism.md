@@ -25,7 +25,7 @@ This isn’t wrong. But the optimism we’re talking about doesn’t deny this r
 
 What we’re talking about is going through the next decade with our eyes open and welcoming the challenges. Only by being curious and better understanding these problems will we start to see new ways of solving them.
 
-## Fucked and unfuckable
+## Fucked _and_ unfuckable
 
 Nobody’s saying this is easy. But, as F Scott Fitzgerald famously wrote…
 
