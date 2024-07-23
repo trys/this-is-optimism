@@ -16,8 +16,8 @@ links:
     url: https://twitter.com/anilkseth
 ---
 
-Anil Seth is Professor of Cognitive and Computational Neuroscience and Director of the Centre for Consciousness Science at the University of Sussex. He is also Co-Director of the Canadian Institute for Advanced Research Program on Brain, Mind and Consciousness and a European Research Council Advanced Investigator.
+Anil Seth is a neuroscientist, author, and public speaker who has pioneered research into the brain basis of consciousness for more than twenty years.
 
-He has published more than 200 research papers and has been recognised by Web of Science, over several years, as being in the top 0.1% of researchers worldwide. His two TED talks have been viewed over sixteen million times.
+He is Professor of Cognitive and Computational Neuroscience and Director of the Centre for Consciousness Science at the University of Sussex. He is also Co-Director of the Canadian Institute for Advanced Research Program on Brain, Mind and Consciousness, a European Research Council Advanced Investigator, and former Editor-in-Chief of the journal Neuroscience of Consciousness. He has published more than 200 research papers, is a Clarivate Highly Cited Researcher (2019-2023), and in 2023 he received the Royal Society Michael Faraday Prize. 
 
-In 2023 he was awarded the Royal Society Michael Faraday Prize for his services to public outreach and Prospect Magazine listed him as one of the Top 25 global thinkers for 2024. His 2021 book Being You: A New Science of Consciousness was a Sunday Times top 10 bestseller and named ‘Book of the Year’by many periodicals.
+His 2017 TED talk has been viewed more than fourteen million times, and his 2021 book Being You: A New Science of Consciousness was an instant Sunday Times Bestseller and a Book of the Year for The Economist, The New Statesman, Bloomberg Business, The Guardian, The Financial Times and elsewhere.
