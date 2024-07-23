@@ -1,5 +1,5 @@
 ---
-title: Why?
+title: Why optimism?
 layout: content
 ---
 
