@@ -1,0 +1,23 @@
+.c-newsflash {
+  --padding: 1.75rem;
+  background: var(--blue--3);
+  color: var(--white);
+  padding: var(--padding);
+  font-size: var(--step--1);
+  border-bottom: 2px solid var(--black);
+  margin-top: 1rem;
+
+  img {
+    margin-top: calc(-1rem - var(--padding));
+  }
+
+  h2 {
+    font-size: var(--step-1);
+    font-weight: 700;
+    color: var(--pink);
+  }
+
+  @media (min-width: 40em) {
+    margin-bottom: 1rem;
+  }
+}

@@ -7,6 +7,12 @@ contentStyle: home
 {%- from "components/component/component.njk" import c -%}
 {% extends "page.njk" %}
 
+{% set beforeContent %}
+  {% if newsflash.title %}
+    {{ c('newsflash', newsflash) }}
+  {% endif %}
+{% endset %}
+
 {% set afterContent %}
   {{ c('tickets', { event: event }) }}
 {% endset %}

@@ -1,0 +1,11 @@
+<aside class="c-newsflash u-flow--10">
+  {% if params.image %}
+    <picture>
+      <source srcset="/static/img/{{ params.image.url }}.webp" type="image/webp">
+      <source srcset="/static/img/{{ params.image.url }}.avif" type="image/avif">
+      <img src="/static/img/{{ params.image.url }}.png" width="{{ params.image.width }}" height="{{ params.image.height }}" alt="{{ params.image.alt }}">
+    </picture>
+  {% endif %}
+  <h2>{{ params.title }}</h2>
+  <p>{{ params.content | safe }}</p>
+</aside>
