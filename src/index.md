@@ -1,14 +1,6 @@
 ---
 title: This is Optimism
 layout: home
-newsflash:
-  title: New speakers!
-  content: 'Love Leading co-founder and fellow Brightonian <strong>Nicole Bradfield</strong>, Storythings and Ada’s list co-founder <strong>Anjali Ramachandran</strong> plus author, serial entrepreneur and self-confessed ‘reluctant futurist’ <strong>Mark Stevenson</strong> will be joining us on Friday 20th September.'
-  image:
-    width: 144
-    height: 60
-    url: speakers
-    alt: 'Three circular headshot images of Nicole Bradfield, Anjali Ramachandran & Mark Stevenson'
 ---
 
 # An intimate one-day conference for 100 ambitious change-makers who wholeheartedly believe that humans can imagine and create radically better futures

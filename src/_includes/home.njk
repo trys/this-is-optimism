@@ -8,9 +8,9 @@ contentStyle: home
 {% extends "page.njk" %}
 
 {% set beforeContent %}
-  {% if newsflash.title %}
+  {%- for newsflash in collections.newsflash -%}
     {{ c('newsflash', newsflash) }}
-  {% endif %}
+  {%- endfor -%}
 {% endset %}
 
 {% set afterContent %}
