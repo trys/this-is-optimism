@@ -4,7 +4,7 @@ title: Mark Stevenson
 profession: Co-founder and Chief Impact Officer, CUR8, Ambassador Client Earth, Impact Board Chair, Climate.vc, Author
 image: /static/img/mark-stevenson.jpg
 tags: speakers
-order: 7
+order: 8
 links:
   -
     label: markstevenson.com

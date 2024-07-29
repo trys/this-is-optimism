@@ -4,7 +4,7 @@ title: Anil Seth
 profession: Author and Professor of Cognitive and Computational Neuroscience at the University of Sussex
 image: /static/img/anil-seth.jpg
 tags: speakers
-order: 6
+order: 7
 links:
   -
     label: anilseth.com

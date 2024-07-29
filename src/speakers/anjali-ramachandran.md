@@ -4,7 +4,7 @@ title: Anjali Ramachandran
 profession: Director at Storythings & Co-founder of Ada’s List
 image: /static/img/anjali-ramachandran.jpg
 tags: speakers
-order: 5
+order: 6
 links:
   -
     label: LinkedIn

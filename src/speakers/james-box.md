@@ -4,7 +4,7 @@ title: James Box
 profession: Co-founder of Berst and Curator of This is Optimism
 image: /static/img/james-box.jpg
 tags: speakers
-order: 8
+order: 9
 links:
   -
     label: Berst
