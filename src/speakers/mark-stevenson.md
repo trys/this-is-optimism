@@ -11,7 +11,7 @@ links:
     type: web
     url: https://markstevenson.org/
   -
-    label: Storythings
+    label: Twitter
     type: twitter
     url: https://twitter.com/Optimistontour
 
