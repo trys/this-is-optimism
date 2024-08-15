@@ -1,18 +1,23 @@
----
-contentSize: home
-withHeaderHands: true
-contentStyle: home
----
-
 {%- from "components/component/component.njk" import c -%}
-{% extends "page.njk" %}
+{% extends "layout.njk" %}
 
-{% set beforeContent %}
-  {%- for newsflash in collections.newsflash -%}
-    {{ c('newsflash', newsflash) }}
-  {%- endfor -%}
-{% endset %}
+{% block inner %}
 
-{% set afterContent %}
-  {{ c('tickets', { event: event }) }}
-{% endset %}
+    {{ c('header', {
+        title: title,
+        event: event,
+        intro: intro,
+        withHeaderHands: true,
+        navigation: navigation.header,
+        currentUrl: page.url
+    }) }}
+
+    <main class="o-wrap o-wrap--home">
+        {%- for p in collections.home | orderByOrder -%}
+          {{ c(p.data.component, p) }}
+        {%- endfor -%}
+    </main>
+
+    {{ c('footer', { navigation: navigation.footer }) }}
+
+{% endblock %}

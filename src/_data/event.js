@@ -1,6 +1,6 @@
 module.exports = {
   date: {
-    name: 'Friday 20 September 2024',
+    name: 'Friday 20 Sep 2024',
   },
   location: {
     name: 'Artelium Wine Estate, Sussex',
@@ -9,13 +9,10 @@ module.exports = {
   tickets: {
     onSale: true,
     cost: '£389+VAT',
+    subtitle: 'Tickets are £389 and on sale now',
     buyCta: {
       link: 'https://ti.to/berst/this-is-optimism',
-      label: 'Buy your golden ticket'
-    },
-    signUpCta: {
-      link: 'https://ti.to/berst/this-is-optimism',
-      label: 'Buy your golden ticket'
+      label: 'Buy tickets'
     }
   }
 };

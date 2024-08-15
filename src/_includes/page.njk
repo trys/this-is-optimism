@@ -5,8 +5,10 @@
     {{ c('header', {
         title: title,
         event: event,
+        intro: intro,
         withHeaderHands: withHeaderHands,
-        navigation: navigation.header
+        navigation: navigation.header,
+        currentUrl: page.url
     }) }}
 
     <main class="o-wrap o-wrap--{{ contentSize }}">

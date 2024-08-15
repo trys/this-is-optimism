@@ -1,23 +1,23 @@
 @use 'node_modules/utopia-core-scss/src/utopia' as utopia;
 
+$settings: (
+  "minWidth": 375,
+  "maxWidth": 1000,
+  "usePx": true,
+  "relativeTo": "viewport-width",
+);
+
+@function cc($min, $max) {
+  @return utopia.calculateClamp(map-merge($settings, (
+    "minSize": $min,
+    "maxSize": $max,
+  )));
+}
+
 .c-header {
-  $settings: (
-    "minWidth": 375,
-    "maxWidth": 1000,
-    "usePx": true,
-    "relativeTo": "viewport-width",
-  );
-
-  @function cc($min, $max) {
-    @return utopia.calculateClamp(map-merge($settings, (
-      "minSize": $min,
-      "maxSize": $max,
-    )));
-  }
-
   --min-height: 320px;
 
-  padding-block: 2.5rem;
+  padding-block: 7.5rem 2.5rem;
   text-align: center;
   min-height: var(--min-height);
   display: flex;
@@ -25,11 +25,16 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+
+  &__content {
+    margin-block: auto;
+  }
   
   @media (min-width: 43em) {
-    --min-height: 300px;
+    --min-height: 340px;
 
     justify-content: flex-start;
+    padding-block-start: 0;
   }
 
   .c-logo {
@@ -39,9 +44,10 @@
   &--with-hands {
     --links-size: var(--step-1);
     --content-offset: #{cc(-85, 10)};
-    --min-height: 580px;
+    --min-height: #{cc(480, 850)};
 
     min-height: var(--min-height);
+    margin-top: 6rem;
 
     .c-logo {
       animation: 1.5s fadeIn 0.8s forwards ease-in-out;
@@ -61,10 +67,10 @@
       top: 50%;
       transform: translate(-50%, -50%) translateY(var(--content-offset));
     }
+  }
 
-    @media (min-width: 43em) {
-      --min-height: 542px;
-    }
+  @media (min-width: 43em) {
+    margin-top: 0;
   }
 
   h2 {
@@ -76,7 +82,7 @@
     align-items: center;
     flex-direction: column;
     gap: 0 2rem;
-    font-size: var(--step--2);
+    font-size: var(--step--1);
 
     @media (min-width: 43em) {
       flex-direction: row;
@@ -133,8 +139,8 @@
       --hand-offset-y-enter: #{cc(-120, -90)};
 
       --hand-rotate: 0deg;
-      --hand-offset-x: #{cc(-342, -660)};
-      --hand-offset-y: #{cc(-195, -140)};
+      --hand-offset-x: #{cc(-342, -710)};
+      --hand-offset-y: #{cc(-195, -190)};
 
       --hand-animation-speed: 1s;
       --hand-animation-speed-delay: 0s;
@@ -150,8 +156,8 @@
       --hand-offset-y-enter: #{cc(110, 130)};
 
       --hand-rotate: 0deg;
-      --hand-offset-x: #{cc(370, 710)};
-      --hand-offset-y: #{cc(120, 350)};
+      --hand-offset-x: #{cc(370, 760)};
+      --hand-offset-y: #{cc(120, 390)};
 
       --hand-animation-speed: 1s;
       --hand-animation-speed-delay: 0s;
@@ -174,5 +180,28 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+.c-header-cta {
+  margin-top: #{cc(-128, -80)};
+  color: var(--white);
+  text-align: center;
+  animation: 1.5s fadeIn 1.5s forwards ease-in-out;
+  opacity: 0;
+  
+  p:first-of-type {
+    font-weight: var(--font-weight-lede);
+    margin-top: 1.25rem;
+  }
+  
+  .c-button {
+    border-radius: 2em;
+  }
+
+  &__intro {
+    font-size: var(--type-24-30);
+    max-width: 50rem;
+    margin: var(--space-72-140) auto;
   }
 }

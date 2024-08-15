@@ -1,7 +1,9 @@
 ---
 permalink: false
+tags: home
+component: newsflash
+order: 0
 title: New speakers!
-tags: newsflash
 linkTo: /speakers
 image:
   width: 144
