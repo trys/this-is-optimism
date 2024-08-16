@@ -8,6 +8,13 @@ module.exports = function (eleventyConfig) {
     return values.sort((a, b) => a.data.order - b.data.order);
   });
 
+  eleventyConfig.addFilter("combine", (obj, key, value) => {
+    return {
+      ...obj,
+      [key]: value,
+    };
+  });
+
   return {
     dir: {
       input: "src",

@@ -1,0 +1,9 @@
+<section data-block="speakers" class="o-wrap o-wrap--full">
+  <div class="c-content u-flow--content o-links c-content--prose">
+      {{ params.content | safe}}
+  </div>
+  {{ c('speakers-slider', { speakers: params.speakers }) }}
+  <footer>
+    {{ c('button', { link: '/speakers', label: 'See all speakers' })}}
+  </footer>
+</section>

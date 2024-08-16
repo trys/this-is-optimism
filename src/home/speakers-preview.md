@@ -1,9 +1,7 @@
 ---
 permalink: false
 tags: home
-component: content-prose
-withLede: true,
-images: []
+component: content-speakers
 order: 1
 ---
 

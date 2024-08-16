@@ -25,9 +25,11 @@ images: [
   }
 ]
 ---
+{%- from "components/component/component.njk" import c -%}
 
 Hosted at the beautiful [Artelium Vineyard](/venue) in the Sussex Countryside, attendees will [enjoy wonderful food](/food) from award winning chef Hannah Thomas, vineyard tours and tasting from Artelium’s founders plus a few other surprises we’re keeping up our sleeves until the day.
 
-[More about our venue](/venue)
+<p>{{ c('twi', { icon: 'arrow-right', align: 'right', text: 'More about our venue', link: '/venue' }) }}</p>
 
-[More about food and experiences](/food)
+<p>{{ c('twi', { icon: 'arrow-right', align: 'right', text: 'More about food and experiences', link: '/food' }) }}</p>
+

@@ -1,0 +1,28 @@
+{%- set classNames = "c-twi" -%}
+{%- set align = params.align or 'left' -%}
+
+{%- if params.classes %}
+  {% set classNames = classNames + " " + params.classes %}
+{%- endif -%}
+
+{%- set classNames = classNames + " c-twi--" + align -%}
+
+{%- set attrs = '' -%}
+{%- if params.attrs -%}
+  {% set attrs = ' ' + params.attrs %}
+{%- endif -%}
+
+{%- if params.link != null -%}
+  <a href="{{ params.link }}" class="{{ classNames }}"{{ attrs }}>
+{%- else -%}
+  <span class="{{ classNames }}" {{ attrs }}>
+{%- endif -%}
+
+  <span>{{ params.text }}</span>
+  {{ c('icon', { id: params.icon }) }}
+
+{%- if params.link != null -%}
+  </a>
+{%- else -%}
+  </span>
+{%- endif -%}

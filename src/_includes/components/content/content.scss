@@ -176,7 +176,20 @@
   }
 }
 
-[data-block="prose"] + [data-block="collage"] {
+[data-block="speakers"] {
+  overflow: hidden;
+
+  .c-content--prose {
+    padding-bottom: 2.5rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.25rem var(--gutter-in) var(--space-72-100);
+  }
+}
+
+[data-block="speakers"] + [data-block="collage"] {
   margin-top: 100px;
 
   @media (min-width: 38rem) {

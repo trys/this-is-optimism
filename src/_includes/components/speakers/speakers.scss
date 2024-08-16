@@ -1,4 +1,53 @@
+@use 'node_modules/utopia-core-scss/src/utopia' as utopia;
+
 .c-speakers {
   padding-bottom: var(--space-72-100);
   margin-top: -2rem;
+}
+
+:root {
+  --slider-offset-space: calc(var(--gutter-in) + #{utopia.calculateClamp(
+    (
+      'minWidth': 930,
+      'maxWidth': 1090,
+      'usePx': true,
+      'relativeTo': 'viewport-width',
+      'minSize': 0,
+      'maxSize': 80,
+    )
+  )});
+}
+
+.c-speakers-slider {
+  display: flex;
+  gap: 1.875rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-left: var(--slider-offset-space);
+  padding-right: var(--gutter-in);
+
+  & {
+    scrollbar-width: none; /* Firefox */
+  }
+
+  &::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
+
+  & > * {
+    flex: 0 0 15rem;
+    scroll-snap-align: center;
+  }
+
+  &__controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    padding-left: var(--slider-offset-space);
+    padding-bottom: 1rem;
+  }
+
+  &__prev {
+    transform: scaleX(-1);
+  }
 }
