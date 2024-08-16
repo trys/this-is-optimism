@@ -30,7 +30,7 @@ $settings: (
     margin-block: auto;
   }
   
-  @media (min-width: 43em) {
+  @media screen and (min-width: 43em) {
     --min-height: 340px;
 
     justify-content: flex-start;
@@ -184,11 +184,15 @@ $settings: (
 }
 
 .c-header-cta {
-  margin-top: #{cc(-128, -80)};
   color: var(--white);
   text-align: center;
-  animation: 1.5s fadeIn 1.5s forwards ease-in-out;
-  opacity: 0;
+  margin: 0 auto 2.5rem;
+  
+  .c-header--with-hands & {
+    margin: #{cc(-128, -80)} auto 0;
+    animation: 1.5s fadeIn 1.5s forwards ease-in-out;
+    opacity: 0;
+  }
   
   p:first-of-type {
     font-weight: var(--font-weight-lede);
