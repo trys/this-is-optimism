@@ -3,13 +3,13 @@ permalink: false
 tags: home
 component: newsflash
 order: 0
-title: New speakers!
+title: New speaker!
 linkTo: /speakers
 image:
-  width: 144
-  height: 60
+  width: 80
+  height: 80
   url: speakers
-  alt: 'Three circular headshot images of Nicole Bradfield, Anjali Ramachandran & Mark Stevenson'
+  alt: 'A circular headshot image of Sumit Paul-Choudhury'
 ---
 
-Love Leading co-founder and fellow Brightonian **Nicole Bradfield**, Storythings and Ada’s list co-founder **Anjali Ramachandran** plus author, serial entrepreneur and self-confessed ‘reluctant futurist’ **Mark Stevenson** will be joining us on Friday 20th September.
+We're delighted to add Sumit Paul-Choudhury to the TiO line-up. Sumit is the author of the soon-to-be-published book [The Bright Side](https://www.waterstones.com/book/the-bright-side/sumit-paul-choudhury/9781838859220), an investigation of the philosophy and practice of optimism.

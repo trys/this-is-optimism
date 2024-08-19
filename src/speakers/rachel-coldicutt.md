@@ -4,7 +4,7 @@ title: Rachel Coldicutt
 profession: Strategist and Founder of Careful Industries
 image: /static/img/rachel-coldicutt.jpg
 tags: speakers
-order: 2
+order: 3
 links:
   -
     label: rachelcoldicutt.com
