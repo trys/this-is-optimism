@@ -3,6 +3,8 @@
   --link-active: var(--pink);
 
   background: var(--white);
+  position: relative;
+  z-index: 2;
   
   &__wrapper {
     display: flex;
@@ -19,6 +21,10 @@
     align-items: center;
     gap: 1.25rem;
     font-size: 0.9375rem;
+
+    > a {
+      display: flex;
+    }
 
     svg {
       flex-basis: var(--space-100-110);
@@ -105,6 +111,8 @@
   margin-bottom: -1px;
   margin-top: max(-13%, -100px);
   pointer-events: none;
+  position: relative;
+  z-index: 2;
 
   img {
     width: 200%;
@@ -129,4 +137,27 @@
       margin-top: max(-15%, -140px);
     }
   }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(1rem) translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%);
+  }
+}
+
+
+.c-floating-buy {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  animation: 0.5s fadeInUp 0.5s forwards ease-in-out;
+  opacity: 0;
+  z-index: 1;
 }

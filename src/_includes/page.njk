@@ -6,7 +6,7 @@
         title: title,
         event: event,
         intro: intro,
-        withHeaderHands: withHeaderHands,
+        isHome: false,
         navigation: navigation.header,
         currentUrl: page.url
     }) }}
@@ -15,6 +15,6 @@
         {{ c('content', { content: content, beforeContent: beforeContent, afterContent: afterContent, style: contentStyle }) }}
     </main>
 
-    {{ c('footer', { navigation: navigation.footer }) }}
+    {{ c('footer', { navigation: navigation.footer, event: event,isHome: false }) }}
 
 {% endblock %}

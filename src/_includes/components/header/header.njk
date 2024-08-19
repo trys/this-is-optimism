@@ -1,7 +1,7 @@
-<header class="c-header{{ ' c-header--with-hands' if params.withHeaderHands }}">
+<header class="c-header{{ ' c-header--with-hands' if params.isHome }}">
   {{ c('navigation', { navigation: params.navigation, event: params.event, currentUrl: params.currentUrl }) }}
   
-  {% if params.withHeaderHands %}
+  {% if params.isHome %}
     <div class="c-header__hands">
       {{ c('hand-left') }}
       {{ c('hand-right') }}
@@ -16,7 +16,7 @@
   </div>
 </header>
 
-{% if params.event.tickets.onSale and params.withHeaderHands %}
+{% if params.event.tickets.onSale and params.isHome %}
   <aside class="c-header-cta o-wrap o-wrap--inline">
     {{ c('button', params.event.tickets.buyCta) }}
     {% if params.event.tickets.subtitle %}
@@ -27,4 +27,3 @@
     {% endif %}
   </aside>
 {% endif %}
-
