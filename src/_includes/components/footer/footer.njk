@@ -2,6 +2,10 @@
     <img class="" src="/static/img/footer.svg" alt="" />
 </figure>
 
+{% if params.event.tickets.onSale and not params.isHome %}
+  <aside class="c-floating-buy">{{ c('button', params.event.tickets.buyCta) }}</aside>
+{% endif %}
+
 <footer class="c-footer">
     <div class="c-footer__wrapper o-wrap o-wrap--full-width o-wrap--inline o-links">
         <div class="c-footer__content">
