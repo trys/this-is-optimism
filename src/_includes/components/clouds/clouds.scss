@@ -38,26 +38,26 @@
   }
 
   &--3 {
-    --cloud-top: #{cc(40, 137)};
+    --cloud-top: #{cc(40, 37)};
     --cloud-delay: -380s;
     --cloud-speed: 450s;
     --cloud-repeats: 1;
   }
 
   &--4 {
-    --cloud-top: #{cc(450, 370)};
+    --cloud-top: #{cc(450, 250)};
     --cloud-delay: -40s;
     --cloud-speed: 380s;
   }
 
   &--2 {
-    --cloud-top: 820px;
+    --cloud-top: 520px;
     --cloud-delay: -25s;
     --cloud-speed: 420s;
   }
     
   &--1 {
-    --cloud-top: 830px;
+    --cloud-top: 700px;
     --cloud-delay: -350s;
     --cloud-speed: 400s;
   }

@@ -1,0 +1,43 @@
+<section class="c-speakers-slider" id="speakers-slider">
+  {% for speaker in params.speakers %}
+    <article class="c-speaker-preview">
+      <figure>
+        <img src="{{ speaker.data.image }}" width="240" height="240" alt="{{ speaker.data.name }}" loading="lazy" />
+      </figure>
+      <div class="c-speaker__content">
+        <h3>{{ speaker.data.title }}</h3>
+        <h4>{{ speaker.data.profession }}</h4>
+      </div>
+    </article>
+  {% endfor %}
+</section>
+<div class="c-speakers-slider__controls">
+  <button type="button" class="c-speakers-slider__prev c-button-icon" aria-hidden="true">
+    {{ c('icon', { id: 'arrow-right' }) }}
+  </button>
+  <button type="button" class="c-speakers-slider__next c-button-icon" aria-hidden="true">
+    {{ c('icon', { id: 'arrow-right' }) }}
+  </button>
+</div>
+
+<script>
+(() => {
+  const slider = document.getElementById('speakers-slider');
+  if (!slider) return;
+
+  const prev = document.querySelector('.c-speakers-slider__prev');
+  const next = document.querySelector('.c-speakers-slider__next');
+
+  if (!prev || !next) return;
+
+  prev.addEventListener('click', () => moveSlider('prev'));
+  next.addEventListener('click', () => moveSlider('next'));
+
+  const moveSlider = (direction) => {
+    slider.scrollBy({
+      left: direction === 'prev' ? -240 : 240,
+      behavior: 'smooth',
+    });
+  };
+})();
+</script>

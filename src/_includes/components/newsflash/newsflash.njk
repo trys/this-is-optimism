@@ -1,15 +1,17 @@
-<aside class="c-newsflash u-flow--10 o-links">
-  {% if params.data.image %}
-    <picture>
-      <source srcset="/static/img/{{ params.data.image.url }}.webp" type="image/webp">
-      <source srcset="/static/img/{{ params.data.image.url }}.avif" type="image/avif">
-      <img src="/static/img/{{ params.data.image.url }}.png" width="{{ params.data.image.width }}" height="{{ params.data.image.height }}" alt="{{ params.data.image.alt }}">
-    </picture>
-  {% endif %}
-  {% if params.data.linkTo %}
-    <h2><a href="{{ params.data.linkTo }}">{{ params.data.title }}</a></h2>
-  {% else %}
-    <h2>{{ params.data.title }}</h2>
-  {% endif %}
-  <p>{{ params.content | safe }}</p>
+<aside class="c-newsflash">
+  <div class="o-wrap o-wrap--inline o-wrap--content u-flow--10 o-links">
+    {% if params.data.image %}
+      <picture>
+        <source srcset="/static/img/{{ params.data.image.url }}.webp" type="image/webp">
+        <source srcset="/static/img/{{ params.data.image.url }}.avif" type="image/avif">
+        <img src="/static/img/{{ params.data.image.url }}.png" width="{{ params.data.image.width }}" height="{{ params.data.image.height }}" alt="{{ params.data.image.alt }}">
+      </picture>
+    {% endif %}
+    {% if params.data.linkTo %}
+      <h2><a href="{{ params.data.linkTo }}">{{ params.data.title }}</a></h2>
+    {% else %}
+      <h2>{{ params.data.title }}</h2>
+    {% endif %}
+    <p>{{ params.content | safe }}</p>
+  </div>
 </aside>

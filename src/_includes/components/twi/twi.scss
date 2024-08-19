@@ -1,0 +1,20 @@
+.c-twi {
+  $twi-space: 0.5em;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: inherit;
+
+  .c-icon,
+  .c-icon-wrapper {
+    margin-left: $twi-space;
+    font-size: 1.25em;
+  }
+
+  &--left .c-icon,
+  &--left .c-icon-wrapper {
+    margin-right: $twi-space;
+    margin-left: 0;
+    order: -1;
+  }
+}

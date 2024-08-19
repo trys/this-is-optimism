@@ -6,7 +6,19 @@
   inline-size: 100%;
 
   &--home {
-    --wrap-width: var(--site-width-home);
+    display: grid;
+    grid-template-columns: 1fr;
+
+    
+    @media (min-width: 38rem) {
+      grid-gap: 2.5rem;
+    }
+
+    @media (min-width: 70em) {
+      & > * {
+        border-radius: 4px;
+      }
+    }
   }
 
   &--content {
@@ -19,6 +31,7 @@
 
   &--full {
     background: var(--white);
+    border-radius: 4px;
   }
 
   &--full-width {

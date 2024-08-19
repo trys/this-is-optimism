@@ -27,10 +27,18 @@
     }
   }
 
+  &--prose-home {
+    --prose-padding: 0;
+
+    @media (min-width: 38rem) {
+      --prose-padding: var(--space-72-100);
+    }
+  }
+
   &--prose {
     max-width: calc(var(--site-width-content) + var(--gutter-in) * 2);
     margin-inline: auto;
-    padding-block: var(--space-72-100);
+    padding-block: var(--prose-padding, var(--space-72-100));
     font-weight: var(--font-weight-light);
     line-height: var(--line-height-prose);
 
@@ -165,5 +173,26 @@
         width: var(--figure-width, calc(100% + var(--gutter-in) * 2));
       }
     }
+  }
+}
+
+[data-block="speakers"] {
+  overflow: hidden;
+
+  .c-content--prose {
+    padding-bottom: 2.5rem;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.25rem var(--gutter-in) var(--space-72-100);
+  }
+}
+
+[data-block="speakers"] + [data-block="collage"] {
+  margin-top: 100px;
+
+  @media (min-width: 38rem) {
+    margin-top: 0;
   }
 }

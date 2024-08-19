@@ -1,4 +1,6 @@
 <header class="c-header{{ ' c-header--with-hands' if params.withHeaderHands }}">
+  {{ c('navigation', { navigation: params.navigation, event: params.event, currentUrl: params.currentUrl }) }}
+  
   {% if params.withHeaderHands %}
     <div class="c-header__hands">
       {{ c('hand-left') }}
@@ -12,6 +14,17 @@
         <strong>{{ params.event.date.name }}</strong> <a target="_blank" rel="noreferrer" href="{{ params.event.location.map }}">{{ params.event.location.name }}</a>
     </h2>
   </div>
-
-  {{ c('navigation', { navigation: params.navigation, event: params.event }) }}
 </header>
+
+{% if params.event.tickets.onSale and params.withHeaderHands %}
+  <aside class="c-header-cta o-wrap o-wrap--inline">
+    {{ c('button', params.event.tickets.buyCta) }}
+    {% if params.event.tickets.subtitle %}
+      <p>{{ params.event.tickets.subtitle }}</p>
+    {% endif %}
+    {% if params.intro %}
+      <p class="c-header-cta__intro">{{ params.intro }}</p>
+    {% endif %}
+  </aside>
+{% endif %}
+

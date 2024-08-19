@@ -13,6 +13,8 @@
   color: var(--button-color);
   text-decoration: none;
   text-align: center;
+  border-radius: 2em;
+  font-weight: var(--font-weight-lede);
   cursor: pointer;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   font-size: var(--step-1);
@@ -20,5 +22,23 @@
   &:hover {
     --button-background: var(--white);
     --button-color: var(--orange);
+  }
+}
+
+.c-button-icon {
+  background-color: var(--button-background, transparent);
+  border: 1px solid var(--button-border, var(--orange));
+  color: var(--button-color, var(--orange));
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  &:hover {
+    --button-background: var(--orange);
+    --button-color: var(--white);
   }
 }

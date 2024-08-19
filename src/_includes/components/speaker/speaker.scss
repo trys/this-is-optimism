@@ -55,3 +55,23 @@
     grid-template-columns: min(250px, 40%) 1fr;
   }
 }
+
+.c-speaker-preview {
+  img {
+    width: 15rem;
+    border: 1px solid var(--black);
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: var(--blue--3);
+    font-weight: var(--font-weight-super);
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    color: var(--blue--2);
+    font-weight: var(--font-weight-body);
+    font-size: 1rem;
+  }
+}
