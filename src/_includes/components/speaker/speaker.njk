@@ -5,7 +5,7 @@
   <div class="c-speaker__content">
     <h2>{{ params.data.title }}</h2>
     <h3>{{ params.data.profession }}</h3>
-    <div class="c-speaker__bio u-flow--10">{{ params.content | safe }}</div>
+    <div class="c-speaker__bio u-flow--10 o-links">{{ params.content | safe }}</div>
     <ul class="c-speaker__links">
       {% for item in params.data.links %}
         <li class="o-links">
