@@ -51,9 +51,13 @@
     --offset: min(110px, 20%);
     --collage-gap: 0;
 
-    &--with-lede {
-      grid-template-columns: 1fr 1.5fr;
-      --offset: min(110px, 40%);
+    &--with-lede[data-images="1"] {
+      grid-template-columns: 1fr 2.25fr;
+      --offset: min(200px, 80%);
+    }
+
+    &--with-lede[data-images="3"] {
+      --offset: min(130px, 30%);
     }
 
     div {
