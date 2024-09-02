@@ -3,13 +3,7 @@ permalink: false
 tags: home
 component: newsflash
 order: 0
-title: New speaker!
-linkTo: /speakers
-image:
-  width: 80
-  height: 80
-  url: speakers
-  alt: 'A circular headshot image of Sumit Paul-Choudhury'
+
 ---
 
-We're delighted to add Sumit Paul-Choudhury to the TiO line-up. Sumit is the author of the soon-to-be-published book [The Bright Side](https://www.waterstones.com/book/the-bright-side/sumit-paul-choudhury/9781838859220), an investigation of the philosophy and practice of optimism.
+As most of you will already know, we have rescheduled This is Optimism to Friday 27th June 2025. Same venue, same speakers, more hours of daylight!
