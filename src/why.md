@@ -35,4 +35,4 @@ Or more crudely: everything is fucked but at the same time unfuckable.
 
 Let’s not forget that we humans have repeatedly done the seemingly impossible. And this gives us every right to believe we can do it again. To do this, we need to choose our response – we say let’s choose optimism.
 
-The goal for this little event is to encourage you to make that choice too. Because things will get really interesting when this kind of optimism spreads. This might seem a lofty goal for a small one-day event, but we feel the conversations we’ll have on 20 September are a great place to start.
+The goal for this little event is to encourage you to make that choice too. Because things will get really interesting when this kind of optimism spreads. This might seem a lofty goal for a small one-day event, but we feel the conversations we’ll have on 27 June 2025 are a great place to start.
