@@ -1,7 +1,6 @@
 module.exports = {
   header: [
     { label: 'Home', url: '/' },
-    { label: 'Why?', url: '/why/' },
     { label: 'Speakers', url: '/speakers/' },
     { label: 'Venue', url: '/venue/' },
     { label: 'Food', url: '/food/' },

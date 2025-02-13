@@ -23,7 +23,7 @@
       line-height: var(--line-height-lede);
     }
 
-    p:not(:first-of-type) + p {
+    p + p {
       --flow: 1.2em;
     }
   }
@@ -110,7 +110,7 @@
       --flow: 1em;
     }
 
-    p:not(:first-of-type) + p {
+    p + p {
       --flow: 1.2em;
     }
 
