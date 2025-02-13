@@ -12,6 +12,9 @@
   {% endfor %}
 </section>
 <div class="c-speakers-slider__controls">
+  {% if params.cta %}
+    {{ c('button', params.cta)}}
+  {% endif %}
   <button type="button" class="c-speakers-slider__prev c-button-icon" aria-hidden="true">
     {{ c('icon', { id: 'arrow-right' }) }}
   </button>

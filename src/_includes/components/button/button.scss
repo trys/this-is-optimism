@@ -30,15 +30,16 @@
 
 .c-button-icon {
   background-color: var(--button-background, transparent);
-  border: 1px solid var(--button-border, var(--orange));
+  border: 1px solid var(--button-border, rgba(0, 0, 0, 6%));
   color: var(--button-color, var(--orange));
-  width: 2rem;
-  height: 2rem;
+  width: 3.75rem;
+  height: 3.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  font-size: 1.5em;
 
   &:hover {
     --button-background: var(--orange);

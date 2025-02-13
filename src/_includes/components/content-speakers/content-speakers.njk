@@ -2,8 +2,8 @@
   <div class="c-content u-flow--content o-links c-content--prose">
       {{ params.content | safe}}
   </div>
-  {{ c('speakers-slider', { speakers: params.speakers }) }}
-  <footer>
-    {{ c('button', { link: '/speakers', label: 'See all speakers' })}}
-  </footer>
+  {{ c('speakers-slider', {
+    speakers: params.speakers,
+    cta: { link: '/speakers', label: 'See all speakers' }
+  }) }}
 </section>

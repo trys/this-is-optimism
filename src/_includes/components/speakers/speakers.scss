@@ -42,9 +42,23 @@
   &__controls {
     display: flex;
     gap: 1rem;
-    justify-content: flex-start;
-    padding-left: var(--slider-offset-space);
-    padding-bottom: 1rem;
+    justify-content: flex-end;
+    padding-inline: var(--slider-offset-space);
+    padding-bottom: 72px;
+
+    .c-button {
+      margin-right: auto;
+    }
+
+    @media (max-width: 25em) {
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .c-button {
+        order: 2;
+        margin: 30px auto 0;
+      }
+    }
   }
 
   &__prev {
