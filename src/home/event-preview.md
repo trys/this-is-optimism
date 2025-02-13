@@ -4,6 +4,7 @@ tags: home
 component: content-collage
 withLede: true,
 order: 2
+enabled: true
 images: [
   {
     src: '/static/img/artelium-terrace.jpg',

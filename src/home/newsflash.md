@@ -3,6 +3,7 @@ permalink: false
 tags: home
 component: newsflash
 order: 0
+enabled: false
 
 ---
 

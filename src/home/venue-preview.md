@@ -3,6 +3,7 @@ permalink: false
 tags: home
 component: content-collage
 withLede: true
+enabled: true
 order: 3
 images: [
   {

@@ -1,0 +1,21 @@
+<div class="c-hands">
+  <div class="c-hands__wrapper">
+    {{ c('hand-left') }}
+    {{ c('hand-right') }}
+  </div>
+
+  {% if params.event.tickets.onSale %}
+    <aside class="c-hands-cta o-wrap o-wrap--inline">
+      {% if params.intro %}
+        <div class="c-hands-cta__intro">
+          <p>{{ params.intro }}</p>
+          <p class="c-h">{{ params.intro2 }}</p>
+        </div>
+      {% endif %}
+      {{ c('button', params.event.tickets.buyCta) }}
+      {% if params.event.tickets.subtitle %}
+        <p>{{ params.event.tickets.subtitle }}</p>
+      {% endif %}
+    </aside>
+  {% endif %}
+</div>

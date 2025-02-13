@@ -14,98 +14,18 @@ $settings: (
   )));
 }
 
-.c-header {
-  --min-height: 320px;
+.c-hands {
+  --min-height: #{cc(580, 640)};
 
   padding-block: 7.5rem 2.5rem;
-  text-align: center;
   min-height: var(--min-height);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: column;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: #{cc(100, 40)};
 
-  &__content {
-    margin-block: auto;
-  }
-  
-  @media screen and (min-width: 43em) {
-    --min-height: 340px;
-
-    justify-content: flex-start;
-    padding-block-start: 0;
-  }
-
-  .c-logo {
-    max-width: #{cc(240, 280)};
-  }
-
-  &--with-hands {
-    --links-size: var(--step-1);
-    --content-offset: #{cc(-85, 10)};
-    --min-height: #{cc(480, 850)};
-
-    min-height: var(--min-height);
-    margin-top: 6rem;
-
-    // .c-logo {
-    //   animation: 1.5s fadeIn 0.8s forwards ease-in-out;
-    //   opacity: 0;
-    //   max-width: #{cc(240, 469)};
-    // }
-
-    // h2 {
-    //   opacity: 0;
-    //   animation: 2s fadeIn 1.5s forwards;
-    // }
-
-    // .c-header__content {
-    //   position: absolute;
-    //   left: 50%;
-    //   width: 100%;
-    //   top: 50%;
-    //   transform: translate(-50%, -50%) translateY(var(--content-offset));
-    // }
-  }
-
-  @media (min-width: 43em) {
-    margin-top: 0;
-  }
-
-  h2 {
-    --link-idle: var(--black);
-    --link-active: var(--black);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 0 2rem;
-    font-size: var(--step--1);
-
-    @media (min-width: 43em) {
-      flex-direction: row;
-      font-size: var(--links-size, 0.9375rem);
-
-      & > * + * {
-        position: relative;
-        
-        &::before {
-          color: var(--white);
-          content: '•';
-          font-size: 1.5em;
-          position: absolute;
-          right: 100%;
-          top: 50%;
-          transform: translateX(-.6rem) translateY(-55%);
-          line-height: 1;
-        }
-      }
-    }
-  }
-
-  &__hands {
+  &__wrapper {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -136,11 +56,11 @@ $settings: (
 
       --hand-rotate-enter: -50deg;
       --hand-offset-x-enter: #{cc(-1362, -1710)};
-      --hand-offset-y-enter: #{cc(-120, -90)};
+      --hand-offset-y-enter: #{cc(-220, -90)};
 
       --hand-rotate: 0deg;
-      --hand-offset-x: #{cc(-342, -710)};
-      --hand-offset-y: #{cc(-195, -190)};
+      --hand-offset-x: #{cc(-382, -810)};
+      --hand-offset-y: #{cc(-210, -230)};
 
       --hand-animation-speed: 1s;
       --hand-animation-speed-delay: 0s;
@@ -153,11 +73,11 @@ $settings: (
 
       --hand-rotate-enter: 50deg;
       --hand-offset-x-enter: #{cc(1400, 1760)};
-      --hand-offset-y-enter: #{cc(110, 130)};
+      --hand-offset-y-enter: #{cc(280, 130)};
 
       --hand-rotate: 0deg;
-      --hand-offset-x: #{cc(370, 760)};
-      --hand-offset-y: #{cc(120, 390)};
+      --hand-offset-x: #{cc(370, 860)};
+      --hand-offset-y: #{cc(280, 330)};
 
       --hand-animation-speed: 1s;
       --hand-animation-speed-delay: 0s;
@@ -180,5 +100,40 @@ $settings: (
   }
   to {
     opacity: 1;
+  }
+}
+
+.c-hands-cta {
+  color: var(--white);
+  text-align: center;
+  margin: #{cc(-128, -80)} auto 0;
+  animation: 1.5s fadeIn 1.5s forwards ease-in-out;
+  opacity: 0;
+
+  &__intro {
+    font-size: var(--type-28-46);
+    max-width: 50rem;
+    margin: 0 auto 31px;
+    color: var(--black);
+    line-height: 1.25;
+    padding-inline: 32px;
+
+    > * + * {
+      margin-top: 6px;
+    }
+
+    > :last-child {
+      font-weight: var(--font-weight-super);
+      font-family: var(--font-super), var(--font-sans), var(--font-fallback-stack);
+      color: var(--white);
+    }
+  }
+
+  @media (max-width: 30em) {
+    .c-button {
+      --button-y-padding: 0.5rem;
+      --button-x-padding: 1rem;
+      --button-font-size: var(--step-0);
+    }
   }
 }

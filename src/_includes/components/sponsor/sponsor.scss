@@ -1,0 +1,16 @@
+.c-sponsor {
+  text-align: center;
+  padding-bottom: var(--space-30-10);
+
+  img {
+    vertical-align: middle;
+    max-height: 2em;
+    display: var(--sponsor-display, block);
+    margin: var(--sponsor-margin, 0.5em auto);
+  }
+
+  @media (min-width: 40em) {
+    --sponsor-display: inline;
+    --sponsor-margin: 0 1em;
+  }
+}

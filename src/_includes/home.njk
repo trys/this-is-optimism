@@ -6,15 +6,22 @@
     {{ c('header', {
         title: title,
         event: event,
-        intro: intro,
         isHome: true,
         navigation: navigation.header,
         currentUrl: page.url
     }) }}
 
+    {{ c('hands', {
+        event: event,
+        intro: intro,
+        intro2: intro2
+    }) }}
+
     <main class="o-wrap o-wrap--home">
         {%- for p in collections.home | orderByOrder -%}
-          {{ c(p.data.component, p | combine("speakers", collections.speakers | orderByOrder)) }}
+            {% if p.data.enabled %}
+                {{ c(p.data.component, p | combine("speakers", collections.speakers | orderByOrder)) }}
+            {% endif %}
         {%- endfor -%}
     </main>
 
