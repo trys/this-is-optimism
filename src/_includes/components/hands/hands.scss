@@ -123,8 +123,7 @@ $settings: (
     }
 
     > :last-child {
-      font-weight: var(--font-weight-super);
-      font-family: var(--font-super), var(--font-sans), var(--font-fallback-stack);
+      font-weight: var(--font-weight-extra);
       color: var(--white);
     }
   }
