@@ -20,7 +20,7 @@
     <main class="o-wrap o-wrap--home">
         {%- for p in collections.home | orderByOrder -%}
             {% if p.data.enabled %}
-                {{ c(p.data.component, p | combine("speakers", collections.speakers | orderByOrder)) }}
+                {{ c(p.data.component, (p | combine("speakers", collections.speakers | orderByOrder)) | combine("faqs", collections.faqs | orderBySlug) ) }}
             {% endif %}
         {%- endfor -%}
     </main>

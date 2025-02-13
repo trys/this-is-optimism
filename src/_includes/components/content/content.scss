@@ -150,7 +150,7 @@
       padding-left: 0.25rem;
 
       &::marker {
-        color: var(--pink);
+        color: var(--marker, var(--pink));
       }
 
       & + li {

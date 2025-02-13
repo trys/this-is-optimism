@@ -1,0 +1,22 @@
+<section class="o-wrap o-wrap--full">
+  <div class="u-flow--content o-links c-content--prose c-content--prose-primary">
+    {{ c('content', { content: params.content }) }}
+  </div>
+
+  <ul class="c-faqs">
+    {% for faq in params.faqs %}
+      <li>
+        <details>
+          <summary>
+            {{ faq.data.title }}
+
+            <i></i>
+          </summary>
+          <div class="u-flow--content o-links c-content--prose c-content--faq">
+            {{ faq.content | safe }}
+          </div>
+        </details>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
