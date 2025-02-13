@@ -2,6 +2,7 @@
   padding: var(--gutter-in);
   background: var(--white);
 
+  &--primary,
   &--home {
     h1 {
       color: var(--blue--3);
@@ -32,6 +33,16 @@
 
     @media (min-width: 38rem) {
       --prose-padding: var(--space-72-100);
+    }
+  }
+
+  &--prose-primary {
+    --prose-padding: var(--space-42-12);
+
+    p:first-of-type {
+      color: var(--blue--3);
+      font-size: 1.5rem;
+      font-weight: var(--font-weight-body);
     }
   }
 
