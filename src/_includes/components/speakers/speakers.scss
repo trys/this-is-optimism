@@ -18,6 +18,14 @@
   )});
 }
 
+[data-block="speakers"] {
+  margin-top: 2.5rem;
+
+  @media (width >= 38rem) {
+    margin-top: 0;
+  }
+}
+
 .c-speakers-slider {
   display: flex;
   gap: 1.875rem;
