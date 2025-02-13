@@ -211,10 +211,27 @@
 [data-block="collage"] {
   .c-twi {
     --link-idle: var(--black);
-    --link-active: var(--black);
+    --link-active: var(--orange);
+    
+    text-decoration-thickness: 1px;
+    text-decoration-line: underline;
+    text-decoration-color: var(--orange);
 
     svg {
       color: var(--orange);
+    }
+  }
+
+  .c-collage > div > p:first-of-type {
+    color: var(--blue--3);
+    font-weight: var(--font-weight-body);
+    font-size: var(--step-2);
+    line-height: var(--line-height-body);
+  }
+
+  @media (min-width: 38rem) {
+    figure {
+      margin-top: 72px;
     }
   }
 }
