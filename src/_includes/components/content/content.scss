@@ -207,3 +207,14 @@
     margin-top: 0;
   }
 }
+
+[data-block="collage"] {
+  .c-twi {
+    --link-idle: var(--black);
+    --link-active: var(--black);
+
+    svg {
+      color: var(--orange);
+    }
+  }
+}

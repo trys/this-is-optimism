@@ -14,9 +14,12 @@ images: [
   }
 ]
 ---
+{%- from "components/component/component.njk" import c -%}
 
-This is Optimism is designed for anyone who wants to be inspired about building the future.
+## About the day
 
-Among others, you’ll hang out with product people, founders, investors, designers, strategists and self-confessed ‘policy wonks’. Come along to be part of the conversation on change and have some fun doing it.
+Hosted at the beautiful Artelium Vineyard in the Sussex Countryside, alongside our talks we’ll be enjoying some excellent locally-sourced food from award winning chef Hannah Thomas, exceptional coffee and breakfast from Brighton’s finest Coffee@33 and vineyard tours and tasting from Artelium’s founders.
 
-And, yes there will be a tombola.
+<p>{{ c('twi', { icon: 'arrow-right', align: 'right', text: 'More about our venue', link: '/venue' }) }}</p>
+
+<p>{{ c('twi', { icon: 'arrow-right', align: 'right', text: 'More about food and experiences', link: '/food' }) }}</p>
