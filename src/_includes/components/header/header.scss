@@ -41,34 +41,6 @@ $settings: (
     max-width: #{cc(240, 280)};
   }
 
-  &--with-hands {
-    --links-size: var(--step-1);
-    --content-offset: #{cc(-85, 10)};
-    --min-height: #{cc(480, 850)};
-
-    min-height: var(--min-height);
-    margin-top: 6rem;
-
-    // .c-logo {
-    //   animation: 1.5s fadeIn 0.8s forwards ease-in-out;
-    //   opacity: 0;
-    //   max-width: #{cc(240, 469)};
-    // }
-
-    // h2 {
-    //   opacity: 0;
-    //   animation: 2s fadeIn 1.5s forwards;
-    // }
-
-    // .c-header__content {
-    //   position: absolute;
-    //   left: 50%;
-    //   width: 100%;
-    //   top: 50%;
-    //   transform: translate(-50%, -50%) translateY(var(--content-offset));
-    // }
-  }
-
   @media (min-width: 43em) {
     margin-top: 0;
   }

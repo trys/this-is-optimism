@@ -9,6 +9,14 @@
     margin: var(--sponsor-margin, 0.5em auto);
   }
 
+  a {
+    font-weight: var(--font-weight-lede);
+    text-decoration: underline;
+    text-decoration-color: var(--orange);
+  }
+
+  --link-idle: var(--black);
+
   @media (min-width: 40em) {
     --sponsor-display: inline;
     --sponsor-margin: 0 1em;

@@ -49,23 +49,29 @@
 
   &__controls {
     display: flex;
-    gap: 1rem;
-    justify-content: flex-end;
+    gap: 1.875rem 1rem;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
     padding-inline: var(--slider-offset-space);
     padding-bottom: 72px;
 
     .c-button {
-      margin-right: auto;
+      white-space: nowrap;
     }
 
-    @media (max-width: 25em) {
-      flex-wrap: wrap;
-      justify-content: center;
+    > div {
+      display: flex;
+      gap: 1rem;
+    }
 
-      .c-button {
-        order: 2;
-        margin: 30px auto 0;
-      }
+    > * {
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 27em) {
+      flex-direction: column-reverse;
+      justify-content: center;;
     }
   }
 

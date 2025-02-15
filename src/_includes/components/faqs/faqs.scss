@@ -26,8 +26,13 @@
     align-items: center;
     gap: 1rem;
     user-select: none;
+    text-align: left;
     
     &::marker {
+      content: '';
+    }
+
+    &::webkit-details-marker {
       display: none;
     }
 

@@ -15,7 +15,7 @@ $settings: (
 }
 
 .c-hands {
-  --min-height: #{cc(580, 640)};
+  --min-height: #{cc(520, 640)};
 
   padding-block: 7.5rem 2.5rem;
   min-height: var(--min-height);
@@ -130,9 +130,17 @@ $settings: (
 
   @media (max-width: 30em) {
     .c-button {
-      --button-y-padding: 0.5rem;
-      --button-x-padding: 1rem;
-      --button-font-size: var(--step-0);
+      &.is-floating {
+        position: fixed;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+    }
+
+    [data-floating] {
+      height: 60px;
     }
   }
 }

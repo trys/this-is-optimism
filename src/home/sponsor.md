@@ -7,4 +7,4 @@ enabled: true
 
 ---
 
-In partnership with ![](/static/img/sponsor.svg) Google UK
+In partnership with [![](/static/img/sponsor.svg)](#) Google UK

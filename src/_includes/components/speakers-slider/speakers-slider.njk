@@ -15,12 +15,14 @@
   {% if params.cta %}
     {{ c('button', params.cta)}}
   {% endif %}
-  <button type="button" class="c-speakers-slider__prev c-button-icon" aria-hidden="true">
-    {{ c('icon', { id: 'arrow-right' }) }}
-  </button>
-  <button type="button" class="c-speakers-slider__next c-button-icon" aria-hidden="true">
-    {{ c('icon', { id: 'arrow-right' }) }}
-  </button>
+  <div>
+    <button type="button" class="c-speakers-slider__prev c-button-icon" aria-hidden="true">
+      {{ c('icon', { id: 'arrow-right' }) }}
+    </button>
+    <button type="button" class="c-speakers-slider__next c-button-icon" aria-hidden="true">
+      {{ c('icon', { id: 'arrow-right' }) }}
+    </button>
+  </div>
 </div>
 
 <script>
