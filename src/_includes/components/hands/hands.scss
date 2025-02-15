@@ -24,6 +24,7 @@ $settings: (
   flex-direction: column;
   justify-content: center;
   margin-bottom: #{cc(100, 40)};
+  z-index: 10;
 
   &__wrapper {
     position: absolute;
@@ -128,19 +129,16 @@ $settings: (
     }
   }
 
-  @media (max-width: 30em) {
-    .c-button {
-      &.is-floating {
-        position: fixed;
-        bottom: 1.5rem;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-      }
+  .c-button {
+    &.is-floating {
+      position: fixed;
+      bottom: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
     }
+  }
 
-    [data-floating] {
-      height: 60px;
-    }
+  [data-floating] {
+    height: 60px;
   }
 }
