@@ -25,6 +25,7 @@ $settings: (
   align-items: center;
   flex-direction: column;
   position: relative;
+  z-index: 20;
 
   &__content {
     margin-block: auto;

@@ -9,6 +9,7 @@
   .c-icon-wrapper {
     margin-left: $twi-space;
     font-size: 1.25em;
+    flex-shrink: 0;
   }
 
   &--left .c-icon,
