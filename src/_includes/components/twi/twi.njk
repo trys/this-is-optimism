@@ -2,7 +2,7 @@
 {%- set align = params.align or 'left' -%}
 
 {%- if params.classes %}
-  {% set classNames = classNames + " " + params.classes %}
+  {%- set classNames = classNames + " " + params.classes -%}
 {%- endif -%}
 
 {%- set classNames = classNames + " c-twi--" + align -%}
