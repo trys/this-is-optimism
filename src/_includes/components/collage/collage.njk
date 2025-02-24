@@ -1,6 +1,6 @@
 <figure class="c-collage{{ ' c-collage--with-lede' if params.withLede }}" data-images={{ params.images | length }}>
   <figure>{{ c('collage-image', params.images[0]) }}{{ c('collage-image', params.images[2]) }}</figure>
-  <div>
+  <div class="o-container">
     {{ params.content | safe }}
     {{ c('collage-image', params.images[1]) }}
   </div>

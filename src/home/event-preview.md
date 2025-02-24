@@ -22,4 +22,4 @@ Hosted at the beautiful Artelium Vineyard in the Sussex Countryside, alongside o
 
 <p>{{ c('twi', { icon: 'arrow-right', align: 'right', text: 'More about our venue', link: '/venue' }) }}</p>
 
-<p>{{ c('twi', { icon: 'arrow-right', align: 'right', text: 'More about food and experiences', link: '/food' }) }}</p>
+<p>{{ c('twi', { classes: 'c-twi--food', icon: 'arrow-right', align: 'right', text: 'More about food and experiences', link: '/food' }) }}</p>
