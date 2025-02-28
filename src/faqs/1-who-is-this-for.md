@@ -4,12 +4,8 @@ tags: faqs
 title: Who is this for, really?
 ---
 
-We’ll be honest. If you’re after a typical conference – one full of PowerPoints with 10 takeaways – this isn’t the event for you. But if any of the following sound good, this is going to be cream cheese.
+So far we have a heady selection of founders, entrepreneurs, investors, designers, researchers, writers, policy people, engineers and product people. And a comedian. Amongst them are freelancers, agency folks, consultants (gasp) and a company-of-one. Quite the mix.
 
-- The value of applying an optimistic lens to your daily outlook and your work
-- How to apply optimism to reveal new opportunities for you and your business
-- The benefits of micro-dosing optimism into your everyday habits and behaviours
-- How to infect others with optimism and create compound benefits for you and your teams
-- The 10 secret ChatGPT prompts that that will instantly increase your startup’s valuation, engagement metrics and profitability without you doing any work at all *
+Most importantly, [all our welcome](/code-of-conduct/)
 
-*A lie.
+Well, we say all. Unfortunately, due to past misdemeanours, several people have been excluded from this year’s event: Cynical Sid, Elitist Edwina, Pedantic Priya and Nihilistic Nigel. We wish them all the best with their futures.
