@@ -1,10 +1,12 @@
 .c-sponsor {
   text-align: center;
   padding-bottom: var(--space-30-10);
+  --link-idle: var(--black);
+  --link-active: var(--black);
 
   img {
     vertical-align: middle;
-    max-height: 2em;
+    max-height: 4em;
     display: var(--sponsor-display, block);
     margin: var(--sponsor-margin, 0.5em auto);
   }
@@ -12,13 +14,7 @@
   a {
     font-weight: var(--font-weight-lede);
     text-decoration: underline;
-    text-decoration-color: var(--orange);
+    text-decoration-color: var(--black);
   }
 
-  --link-idle: var(--black);
-
-  @media (min-width: 40em) {
-    --sponsor-display: inline;
-    --sponsor-margin: 0 1em;
-  }
 }
