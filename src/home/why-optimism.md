@@ -9,7 +9,7 @@ enabled: true
 
 ## Why Optimism?
 
-We are at an especially important moment. The cost of innovation has never been lower. The gap between idea and execution keeps shrinking. And, over the next few years & months, lots of unusually powerful technology is going to be built.
+We are at an especially important moment. The cost of innovation has never been lower. The gap between idea and execution keeps shrinking. And, over the next few ~~years~~ months, lots of unusually powerful technology is going to be built.
 
 But, somewhat paradoxically, new ideas and groundbreaking discoveries are on the wane, the frequency of new patents on the decline (unless you’re in China) and the dominant narrative seems to be one of cultural pessimism.
 
