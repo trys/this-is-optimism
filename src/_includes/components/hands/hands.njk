@@ -12,30 +12,7 @@
         </div>
       {% endif %}
       {% if params.event.tickets.onSale %}
-        <div data-floating>
-          {{ c('button', params.event.tickets.buyCta) }}
-        </div>
-          <script>
-              (() => {
-                  const floatingWrapper = document.querySelector('[data-floating]');
-                  const floatingButton = floatingWrapper.querySelector('.c-button');
-                  if (!floatingWrapper || !floatingButton) return;
-
-                  const scrollObserver = new IntersectionObserver(
-                      ([entry]) => {
-                          if (entry.isIntersecting) {
-                              floatingButton.classList.add('is-floating');
-                          } else if (window.scrollY < floatingWrapper.offsetTop) {
-                              floatingButton.classList.remove('is-floating');
-                          }
-                      },
-                      { threshold: 1, rootMargin: '0px 0px -24px 0px' }
-                  );
-
-                  scrollObserver.observe(floatingWrapper);
-
-              })();
-          </script>
+        {{ c('button', params.event.tickets.buyCta) }}
       {% endif %}
     </aside>
 </div>

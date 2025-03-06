@@ -128,22 +128,4 @@ $settings: (
       color: var(--white);
     }
   }
-
-  .c-button {
-    &.is-floating {
-      position: fixed;
-      bottom: 1.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
-
-  [data-floating] {
-    height: 60px;
-
-    @media (min-width: 40em) {
-      margin-top: 140px;
-      margin-bottom: -140px;
-    }
-  }
 }
