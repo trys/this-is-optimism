@@ -7,4 +7,4 @@ enabled: true
 
 ---
 
-[![](/static/img/sponsor.svg)Become our founding partner](https://bit.ly/41GwCVs)   
+[![](/static/img/sponsor.svg)Interested in partnering?](https://bit.ly/41GwCVs)   
