@@ -36,6 +36,7 @@
   }
 
   const closeModal = () => {
+    localStorage.setItem('has-seen-signoff', 'true');
     modal.close();
     showBanner();
     document.body.classList.remove('preventScroll');
@@ -50,7 +51,6 @@
   } else {
     setTimeout(() => {
       openModal();
-      localStorage.setItem('has-seen-signoff', 'true');
     }, 1000);
   }
 

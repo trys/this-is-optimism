@@ -52,6 +52,10 @@
   }
 
   &__close {
+    &:focus-visible {
+      outline: none;
+    }
+
     &-wrapper {
       text-align: right;
     }
