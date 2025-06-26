@@ -7,7 +7,7 @@ module.exports = {
     map: '/venue'
   },
   tickets: {
-    onSale: true,
+    onSale: false,
     cost: '£389+VAT',
     // subtitle: 'Tickets are £389 and on sale now',
     buyCta: {
