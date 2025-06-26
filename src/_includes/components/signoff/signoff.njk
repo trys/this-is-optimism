@@ -1,0 +1,66 @@
+<header class="c-signoff-banner" data-dialog-banner>
+  <p>We had to hit pause on This is Optimism but we’ll be back. <button type="button" data-dialog-trigger>Find out why</button></p>
+</header>
+<dialog class="c-signoff" data-dialog>
+  <div class="c-signoff__close-wrapper">
+    <button type="button" class="c-signoff__close" data-dialog-close aria-label="Close this message">
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none"><rect width="36" height="36" fill="#000" fill-opacity=".02" rx="18"/><path stroke="#000" stroke-width="1.5" d="m25 11-7 7m0 0 7 7m-7-7-7 7m7-7-7-7"/></svg>
+    </button>
+  </div>
+  <div class="u-flow--20">
+    <h2>Thanks for your interest in <strong>This is Optimism</strong></h2>
+    <p>Despite our best efforts, we weren’t able to make the event happen in the end.</p>
+    <p>To everyone who bought a ticket, our speakers, volunteers and everyone who helped or supported us in some way, thank you. Your support meant a lot to us.</p>
+    <p>And, while we’re obviously disappointed, we had a lot of fun organising it.</p>
+    <p>In hindsight, we were probably a bit too ambitious (optimistic, ha!) with the scale of it. But we can’t shake the feeling that the world still needs this message.</p>
+    <p>And for that reason, we will return!</p>
+    <p>In the meantime, stay optimistic.</p>
+    <p>Love,</p>
+    <img src="/static/img/signature.svg" alt="The Berst Team, x" />
+  </div>
+</dialog>
+
+<script>
+(() => {
+  const trigger = document.querySelector('[data-dialog-trigger]');
+  const modal = document.querySelector('[data-dialog]');
+  const banner = document.querySelector('[data-dialog-banner]');
+  const close = document.querySelector('[data-dialog-close]');
+  if (!trigger || !modal || !banner || !close) return;
+
+  const hasSeenSignoff = !!localStorage.getItem('has-seen-signoff');
+  
+  const openModal = () => {
+    modal.showModal();
+    document.body.classList.add('preventScroll');
+  }
+
+  const closeModal = () => {
+    modal.close();
+    showBanner();
+    document.body.classList.remove('preventScroll');
+  }
+
+  const showBanner = () => {
+    banner.classList.add('seen');
+  }
+
+  if (hasSeenSignoff) {
+    showBanner();
+  } else {
+    setTimeout(() => {
+      openModal();
+      localStorage.setItem('has-seen-signoff', 'true');
+    }, 1000);
+  }
+
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeModal();
+    }
+  });
+  trigger.addEventListener('click', openModal);
+  close.addEventListener('click', closeModal);
+
+})();
+</script>

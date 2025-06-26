@@ -1,0 +1,107 @@
+.c-signoff-banner {
+  background: var(--blue--4);
+  color: var(--white);
+  text-align: center;
+  text-wrap: balance;
+  padding: 1rem;
+  font-size: var(--space-14-16);
+  display: none;
+
+  &.seen {
+    display: block;
+  }
+
+  button {
+    color: var(--pink);
+    text-decoration-thickness: 1px;
+    text-decoration-line: underline;
+    text-underline-offset: 2px;
+
+    &:hover {
+      color: var(--pink--1);
+    }
+  }
+}
+
+.c-signoff {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border: none;
+  z-index: 100;
+  max-height: 80%;
+  margin: 0;
+  max-width: 100%;
+  top: auto;
+  text-align: center;
+  text-wrap: balance;
+  padding: 1rem 2.25rem 2.25rem;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
+  
+  &:focus {
+    outline: none;
+  }
+
+  &::backdrop {
+    background: rgba(44, 63, 178, 0.4);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  &__close {
+    &-wrapper {
+      text-align: right;
+    }
+
+    svg {
+      display: block;
+    }
+  }
+
+  h2 {
+    font: var(--font-weight-super) var(--step-5)/var(--line-height-super) var(--font-super), var(--font-sans), var(--font-fallback-stack);
+    color: var(--blue--3);
+
+    strong {
+      color: var(--pink);
+      display: block;
+    }
+  }
+
+  img {
+    margin-inline: auto;
+  }
+
+  @media (min-width: 30em) {
+    text-align: left;
+    max-width: 44rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90%;
+    width: calc(100% - 2rem);
+    bottom: auto;
+    top: 50%;
+
+    img {
+      margin-inline: 0;
+    }
+  }
+
+  @media (min-width: 40em) {
+    padding: min(110px, 5vh) min(110px, 10vw);
+
+    &__close {
+      position: absolute;
+      right: 30px;
+      top: 30px;
+    }
+  }
+}
+
+body.preventScroll {
+  height: 100%;
+  overflow-y: hidden;
+}

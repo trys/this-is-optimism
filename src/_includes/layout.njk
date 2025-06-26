@@ -21,9 +21,9 @@
 		<meta name="twitter:label2" value="Where" />
 		<meta name="twitter:data2" value="{{ event.location.name }}" />
     <link rel="stylesheet" href="/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    {# <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet"> #}
     <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png">
@@ -38,6 +38,7 @@
     {% block head %}{% endblock %}
   </head>
   <body>
+    {{ c('signoff') }}
     <div class="o-page-wrapper">
       {% block inner %}{% endblock %}
     </div>
